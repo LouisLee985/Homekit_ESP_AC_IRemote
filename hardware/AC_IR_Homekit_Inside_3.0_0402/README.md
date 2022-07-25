@@ -7,7 +7,7 @@
 
 <br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2003.JPG" width="400" height="400"/>
 
-<br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2004.JPG" width="200" height="200"/>
+<br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2004.JPG" width="400" height="380"/>
 
 
 某些柜机数显主板
