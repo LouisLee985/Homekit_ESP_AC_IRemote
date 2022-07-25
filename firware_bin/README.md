@@ -1,8 +1,9 @@
 # 刷机
-使用针距1.27mm 4P探针刷机夹连接 USB转串口.
-<br>按住IO0按钮上电.
-<br>松开IO0按钮.
-<br>Flash 下载工具: 
+<ol>
+<li>使用针距1.27mm 4P探针刷机夹连接 USB转串口.
+<li><br>按住IO0按钮上电.
+<li><br>松开IO0按钮.
+<li><br>Flash 下载工具: 
 <br>https://www.espressif.com.cn/zh-hans/support/download/other-tools
 <br>chipType:ESP8285, workMode:develop
 <br>SPIDownload
@@ -11,6 +12,7 @@
 <br>select COM:..., BAUD:115200.
 <br>ERASE...
 <br>START...
+</ol>
 
 # 功能
 Homekit 配对码：11111111
