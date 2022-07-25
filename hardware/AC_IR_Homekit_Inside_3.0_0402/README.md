@@ -3,7 +3,7 @@
 直接连接到空调数显主板上.从主板取电和红外反馈。
 <br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/AC_IR_Homekit_Inside_3.0_0402.jpg" width="400" height="200"/>
 
-<br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2002.JPG" width="200" height="200"/>
+<br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2002.JPG" width="220" height="100"/>
 
 <br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2003.JPG" width="200" height="200"/>
 
