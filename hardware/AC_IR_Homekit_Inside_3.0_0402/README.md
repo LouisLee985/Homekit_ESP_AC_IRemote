@@ -9,15 +9,13 @@
 
 <br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2004.jpg" width="600" height="180"/>
 
-
-某些柜机数显主板
-<br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2005.JPG" width="200" height="360"/>
-
 <br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2007.jpg" width="600" height="180"/>
 
 <br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2029.jpg" width="400" height="400"/>
 
 <br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2030.jpg" width="400" height="400"/>
 
-
 <br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2031.JPG" width="360" height="200"/>
+
+某些柜机数显主板,找出5V，GND，REV(红外接收数据pin),可用。
+<br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2005.JPG" width="200" height="360"/>
