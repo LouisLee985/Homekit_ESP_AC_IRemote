@@ -17,7 +17,7 @@
 
 <br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2029.JPG" width="400" height="400"/>
 
-<br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2030.JPG" width="400" height="400"/>
+<br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2030.jpg" width="400" height="400"/>
 
 
 <br><img src="https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2031.JPG" width="360" height="200"/>
