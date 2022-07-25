@@ -9,7 +9,7 @@
 
 
 ![image](https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2004.jpg)
-
+某些柜机数显主板
 ![image](https://github.com/LouisLee985/Homekit-Air-Conditioner/blob/main/hardware/AC_IR_Homekit_Inside_3.0_0402/IMG_2005.JPG)
 
 
