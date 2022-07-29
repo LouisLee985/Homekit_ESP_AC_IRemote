@@ -67,10 +67,10 @@ UPLOADERFLAGS=[
             "write_flash"            
         ],
 ```
- </P>
+ </p>
 </ol>
 
-
+<p>
 Issues:
 <br>'No Response' after reboot/ssid_off WiFi router
 <br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/139
@@ -79,3 +79,4 @@ Issues:
 
 How to use the EEPROM flash:
 <br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/79#issuecomment-721092920
+</p>
