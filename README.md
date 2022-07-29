@@ -1,4 +1,10 @@
 # Homekit_Air_Conditioner
+<h3>WiFi配网</h3>
+<ol>
+<li>上电后, ESP8266在未联网/断网时LED 2/S闪烁, 生成ESP_XXXXXX的热点,XXXXXX是8266芯片的CHIPID.</li>
+<li>手机连接该热点, 自动弹出配网页面，ios版本不同自动弹出的时间不同, 12.5以下很快就弹出配网页面, 15.0以上要等很长时间. 如果未自动弹出可手动访问192.168.4.1</li>
+<li>Configure WiFi, 选择WiFi，输入密码, Save，连接成功后会自动退出配网模式并关闭ESP_XXXXXX热点.</li>
+</ol>
 
 Homekit 配对码: 11111111
 <br>Apple Homekit App 空调功能: 制冷, 制热, 风速, 当前环境温湿度显示. 

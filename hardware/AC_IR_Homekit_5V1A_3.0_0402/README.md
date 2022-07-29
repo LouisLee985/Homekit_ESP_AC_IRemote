@@ -7,6 +7,7 @@ PCB板1.2mm厚度打样，可与3D外壳适配。
 </div>
 <br>3D打印外壳
 <div align="center">
+<br><img src="/image/5V1A_stl.jpg"  width="50%"/>
 <br><img src="/image/IMG_1001.jpg"  width="50%"/>
 
 <br><img src="/image/IMG_1002.jpg"  width="50%"/>
