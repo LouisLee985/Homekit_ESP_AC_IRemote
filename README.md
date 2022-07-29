@@ -12,7 +12,6 @@ Homekit 配对码: 11111111
 </ol>
 
 # Thanks
-
 <br>https://github.com/tzapu/WiFiManager
 <br>https://github.com/ludiazv/arduino-SHTC3
 <br>https://github.com/crankyoldgit/IRremoteESP8266
