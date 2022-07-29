@@ -17,8 +17,7 @@
 <br>Homekit 配对码: 11111111
 <br>Apple Homekit App 空调功能: 制冷, 制热, 风速, 当前环境温湿度显示. 
 <br>红外信号反馈: 普通空调遥控器调节制冷, 制热, 温度, 风速等Apple Homekit协议支持的动作时, Homekit App会同步更新状态. 
-<br>如果需要出门在外时远程控制 HomeKit 配件, 请将 HomePod、HomePod mini、Apple TV 或 iPad 设置为家居中枢. 
-<br><a href="https://support.apple.com/zh-cn/HT207057">设置家居中枢</a>
+<br>如果需要出门在外时远程控制 HomeKit 配件, 请将 HomePod、HomePod mini、Apple TV 或 iPad <a href="https://support.apple.com/zh-cn/HT207057">设置为家居中枢. </a>
     
 
 <h3>IO0按键定义:</h3>
