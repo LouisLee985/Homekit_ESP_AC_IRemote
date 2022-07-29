@@ -1,4 +1,4 @@
-# testac
+# Study notes
 <ol>
 <p>NOTE:
 <li>modify printfs via macro to include file</li>
