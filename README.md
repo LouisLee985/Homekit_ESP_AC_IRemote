@@ -6,7 +6,7 @@
 <li>Configure WiFi, 选择WiFi，输入密码, Save，连接成功后会自动退出配网模式并关闭ESP_XXXXXX热点.</li>
 </ol>
 <div align="center">
-<br><img src="/image/WiFi_Configure.jpg"  width="50%"/>
+<br><img src="/image/WiFi_Configure.jpg"  width="80%"/>
 </div>
 Homekit 配对码: 11111111
 <br>Apple Homekit App 空调功能: 制冷, 制热, 风速, 当前环境温湿度显示. 
