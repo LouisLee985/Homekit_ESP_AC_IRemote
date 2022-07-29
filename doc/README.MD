@@ -20,7 +20,7 @@ It's from:
 
 <p>
 <li>erase_before_upload.py</li>
-<br><a href="https://community.platformio.org/t/erase-flash-before-upload-in-debug-mode/23703/5">https://community.platformio.org/t/erase-flash-before-upload-in-debug-mode/23703/5</a>
+<a href="https://community.platformio.org/t/erase-flash-before-upload-in-debug-mode/23703/5">https://community.platformio.org/t/erase-flash-before-upload-in-debug-mode/23703/5</a>
     
 ```
 [env:esp32dev]
@@ -76,11 +76,11 @@ UPLOADERFLAGS=[
 <ol>
 <h3>Issues:</h3>
 <li>'No Response' after reboot/ssid_off WiFi router</li>
-<br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/139
+https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/139
 <br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/139#issuecomment-940078639
 <br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/139#issuecomment-1040287908
 
 <li>How to use the EEPROM flash:</li>
-<br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/79#issuecomment-721092920
+https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/79#issuecomment-721092920
 </ol>
 </p>
