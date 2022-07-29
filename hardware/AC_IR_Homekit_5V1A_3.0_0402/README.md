@@ -1,6 +1,6 @@
 # Homekit_Air_Conditioner
 PCB板1.2mm厚度打样，可与3D外壳适配。
-<br><img src="/image/AC_IR_Homekit_5V1A_3.0_0402.jpg"  width="50%" alt="图片描述文字"/>
+<br><img src="/image/AC_IR_Homekit_5V1A_3.0_0402.jpg"  width="50%" alt="5V1A版本PCB"/>
 <br>
 <img src="/image/IMG_1000.jpg"  width="50%"/>
 <br>3D打印外壳
