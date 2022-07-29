@@ -1,6 +1,7 @@
 # Homekit_Air_Conditioner
 <br>内置空调机内. 
-<br>无需USB公插和红外接收电路, 直接连接到空调数显主板上. 共用主板+5V供电和红外接收. 需要动手能力和电工维修经验. 
+<br>无需USB公插和红外接收电路, 直接连接到空调数显主板上. 共用主板+5V供电和红外接收. 
+<br>需要动手能力和电工维修经验. 
 
 <div align="center">
 <br><img src="/image/AC_IR_Homekit_Inside_3.0_0402.jpg" width="50%"/>
