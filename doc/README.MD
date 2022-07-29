@@ -1,6 +1,6 @@
 # Study notes
 <ol>
-<p>NOTE:
+<p>Note:
 <li>modify printfs via macro to include file</li>
     
 ```
@@ -72,12 +72,12 @@ UPLOADERFLAGS=[
 <ol>
 <p>
 Issues:
-<li><br>'No Response' after reboot/ssid_off WiFi router
+<li><br>'No Response' after reboot/ssid_off WiFi router</li>
 <br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/139
 <br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/139#issuecomment-940078639
 <br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/139#issuecomment-1040287908
 
-<li>How to use the EEPROM flash:
+<li>How to use the EEPROM flash:</li>
 <br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/79#issuecomment-721092920
 </p>
 </ol>
