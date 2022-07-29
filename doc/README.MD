@@ -79,14 +79,3 @@ Issues:
 
 How to use the EEPROM flash:
 <br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/79#issuecomment-721092920
-
-# Thanks
-
-<br>https://github.com/tzapu/WiFiManager
-<br>https://github.com/ludiazv/arduino-SHTC3
-<br>https://github.com/crankyoldgit/IRremoteESP8266
-<br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266
-<br>arduino-button-long-press-short-press:
-<br>https://arduinogetstarted.com/tutorials/arduino-button-long-press-short-press
-
-
