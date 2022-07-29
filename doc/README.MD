@@ -17,8 +17,9 @@ It's from:
 #define MYPRINT(str,args...) printf("%s:%d %s() "str"\n",__FILE__,__LINE__,__func__, ##args)
 ```
 </p>
+
 <p>
-<li>erase_before_upload.py
+<li>erase_before_upload.py</li>
 <br><a href="https://community.platformio.org/t/erase-flash-before-upload-in-debug-mode/23703/5">https://community.platformio.org/t/erase-flash-before-upload-in-debug-mode/23703/5</a>
     
 ```
@@ -42,6 +43,7 @@ if index_write_flash != -1:
     env.Replace(UPLOADERFLAGS=new_uploaderflags)
 ```
 </p>
+
 <p>
 <li>Platformio auto upload:</li>
 .platformio\platforms\espressif8266\builder\main.py
@@ -69,15 +71,16 @@ UPLOADERFLAGS=[
 ```
  </p>
 </ol>
-<ol>
+
 <p>
+<ol>
 <h3>Issues:</h3>
-<li><br>'No Response' after reboot/ssid_off WiFi router</li>
+<li>'No Response' after reboot/ssid_off WiFi router</li>
 <br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/139
 <br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/139#issuecomment-940078639
 <br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/139#issuecomment-1040287908
 
 <li>How to use the EEPROM flash:</li>
 <br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/79#issuecomment-721092920
-</p>
 </ol>
+</p>
