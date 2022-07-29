@@ -1,6 +1,6 @@
 # Study notes
 <ol>
-<p>Note:
+<p><h3>Note:</h3>
 <li>modify printfs via macro to include file</li>
     
 ```
@@ -71,7 +71,7 @@ UPLOADERFLAGS=[
 </ol>
 <ol>
 <p>
-Issues:
+<h3>Issues:</h3>
 <li><br>'No Response' after reboot/ssid_off WiFi router</li>
 <br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/139
 <br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266/issues/139#issuecomment-940078639
