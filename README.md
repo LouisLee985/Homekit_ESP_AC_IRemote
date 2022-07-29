@@ -2,7 +2,7 @@
 
 Homekit 配对码: 11111111
 <br>Apple Homekit App 空调功能: 制冷, 制热, 风速, 当前环境温湿度显示. 
-<br>红外信号反馈: 普通空调遥控器调节制冷, 制热, 温度, 风速等Homekit支持的动作时, Homekit App会同步更新状态. 
+<br>红外信号反馈: 普通空调遥控器调节制冷, 制热, 温度, 风速等Apple Homekit协议支持的动作时, Homekit App会同步更新状态. 
 <br>
 <br>IO0按键定义: 
 <ol>
