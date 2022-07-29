@@ -17,5 +17,4 @@ Homekit 配对码: 11111111
 <br>https://github.com/ludiazv/arduino-SHTC3
 <br>https://github.com/crankyoldgit/IRremoteESP8266
 <br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266
-<br>arduino-button-long-press-short-press:
 <br>https://arduinogetstarted.com/tutorials/arduino-button-long-press-short-press
