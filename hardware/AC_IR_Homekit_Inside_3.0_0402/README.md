@@ -2,7 +2,7 @@
 <br>内置空调机内。
 <br>无需USB公插和红外接收电路, 直接连接到空调数显主板上.共用主板+5V供电和红外接收。
 
-<div align="center"   >
+<div align="center">
 <br><img src="/image/AC_IR_Homekit_Inside_3.0_0402.jpg" width="50%"/>
 
 <br><img src="/image/IMG_2002.JPG" width="50%"/>
