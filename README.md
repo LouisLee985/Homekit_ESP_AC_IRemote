@@ -20,7 +20,7 @@
 <br>红外信号反馈: 普通空调遥控器调节制冷, 制热, 温度, 风速等Apple Homekit协议支持的动作时, Homekit App会同步更新状态. 
 <br>如果需要出门在外时远程控制 HomeKit 配件, 请将 HomePod、HomePod mini、Apple TV 或 iPad <a href="https://support.apple.com/zh-cn/HT207057">设置为家居中枢. </a>
     
-<br><img src="/image/Add_accessories3.jpg"  width="80%"/>
+<br><img src="/image/Add_accessories3.PNG"  width="80%"/>
 <h3>IO0按键定义:</h3>
 <ol>
 <li>空调遥控识别: 按下IO0按键5S, LED 2/S闪烁, 松开按键, 15S内普通空调遥控器对准此项目上的遥控接收头(IR_R)按一下开关机键, 等待LED闪烁停止.</li>
