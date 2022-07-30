@@ -14,5 +14,5 @@
 <br>START...
 </ol>
 <div align="center">
-<br><img src="/image/flash_download.jpg"  width="60%" alt="flash_download"/>
+<br><img src="/image/flash_download.jpg"  width="50%" alt="flash_download"/>
 </div>
