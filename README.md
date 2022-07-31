@@ -10,11 +10,12 @@
 </div>
 <h3>Add accessories 添加 HomeKit 配件</h3>
 <br>Homekit 配对码: 11111111
+<br>[Add accessories](https://support.apple.com/en-us/HT204893)
+[GitHub Pages](https://pages.github.com/)
 <div align="center">
 <br><img src="/image/Add_accessories1.jpg"  width="90%"/>
 <br><img src="/image/Add_accessories2.jpg"  width="80%"/>
 </div>
-<br>https://support.apple.com/en-us/HT204893
 <h3>空调功能</h3>
 <ol>
 <li>Apple Homekit App 空调功能: 制冷, 制热, 风速, 当前环境温湿度显示. 
