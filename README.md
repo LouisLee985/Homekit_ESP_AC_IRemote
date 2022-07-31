@@ -39,4 +39,4 @@
 <br>[arduino-SHTC3](https://github.com/ludiazv/arduino-SHTC3) 
 <br>[IRremoteESP8266](https://github.com/crankyoldgit/IRremoteESP8266) 
 <br>[Arduino-HomeKit-ESP8266](https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266) 
-<br><a href="https://arduinogetstarted.com/tutorials/arduino-button-long-press-short-press">arduino-button-long-press-short-press</a>
+<br>[arduino-button-long-press-short-press](https://arduinogetstarted.com/tutorials/arduino-button-long-press-short-press)
