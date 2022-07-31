@@ -23,7 +23,7 @@
 <li>红外信号反馈: 普通空调遥控器调节制冷, 制热, 温度, 风速等 Apple Homekit 协议支持的动作时, Homekit App 会同步更新状态. 
 </ol>
 <div align="center">
-<br><img src="/image/HAP-Specification-Non-Commercial-Version.jpg"  width="70%"/>
+<br><img src="/image/HAP-Specification-Non-Commercial-Version.jpg"  width="60%"/>
 <br><img src="/image/Add_accessories3.PNG"  width="80%"/>
 </div>
 <h3>IO0 按键定义:</h3>
