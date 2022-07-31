@@ -32,7 +32,7 @@ void flipQueueCommand(bool newState) {
 
 
 float temperature_c = 0.1f,humidity=0.1f;
-float temperature_f = 0.1f;
+float temperature_f = 0.1f; //Fahrenheit
 SHTC3 TH(Wire);
 
 void setup() {
