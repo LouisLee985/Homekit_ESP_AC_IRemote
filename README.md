@@ -46,28 +46,6 @@
 |**IR_R** | **红外接收** |**IO12**|
 |**LED** |**指示灯** |**IO2**|
 |**Button**|**按键** |**IO0** |
-<style>
-
-td
-{
-	text-align:center;
-}
-</style>
-<table>
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-  </tr>
-  <tr>
-    <td>Peter</td>
-    <td>Griffin</td>
-  </tr>
-  <tr>
-    <td>Lois</td>
-    <td>Griffin</td>
-  </tr>
-</table>
-
 
 # Thanks
 [HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2](https://developers.apple.com/homekit/faq)
