@@ -34,9 +34,9 @@
 </ol>
 
 # Thanks
-<a href="https://developers.apple.com/homekit/faq">HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2 </a>
-<br><a href="https://github.com/tzapu/WiFiManager">WiFiManager</a>
-<br><a href="https://github.com/ludiazv/arduino-SHTC3">arduino-SHTC3</a>
-<br><a href="https://github.com/crankyoldgit/IRremoteESP8266">IRremoteESP8266</a>
-<br><a href="https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266">Arduino-HomeKit-ESP8266</a>
+[HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2](https://developers.apple.com/homekit/faq)
+
+<br>[arduino-SHTC3](https://github.com/ludiazv/arduino-SHTC3) 
+<br>[IRremoteESP8266](https://github.com/crankyoldgit/IRremoteESP8266) 
+<br>[Arduino-HomeKit-ESP8266](https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266) 
 <br><a href="https://arduinogetstarted.com/tutorials/arduino-button-long-press-short-press">arduino-button-long-press-short-press</a>
