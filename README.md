@@ -8,7 +8,7 @@
 <div align="center">
 <br><img src="/image/WiFi_Configure.jpg"  width="80%"/>
 </div>
-<h3>Add accessories 添加 HomeKit 配件</h3>
+### Add accessories 添加 HomeKit 配件
 <br>Homekit 配对码: 11111111
 <br>[Add accessories](https://support.apple.com/en-us/HT204893)
 [GitHub Pages](https://pages.github.com/)
