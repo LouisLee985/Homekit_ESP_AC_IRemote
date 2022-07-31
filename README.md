@@ -1,6 +1,6 @@
 # Homekit_Air_Conditioner
 ### WiFi配网
-<<<<<<< HEAD
+
 
 1. 上电后, ESP8266在未联网/断网时LED 2/S闪烁, 生成ESP_XXXXXX的热点, XXXXXX是8266芯片的MAC.
 2. 手机连接该热点, 自动弹出配网页面，ios 版本不同自动弹出的时间不同, 12.5以下很快就弹出配网页面, 15.0以上要等很长时间. 如果未自动弹出可手动访问192.168.4.1
@@ -18,7 +18,7 @@
 </div>
 
 ### Add accessories 添加 HomeKit 配件
-<<<<<<< HEAD
+
 * Homekit 配对码: 11111111
 * [Add accessories](https://support.apple.com/en-us/HT204893)
 =======
@@ -31,7 +31,7 @@ Homekit 配对码: 11111111
 </div>
 
 ### 空调功能
-<<<<<<< HEAD
+
 1. Apple Homekit App 空调功能: 开机, 关机, 制冷, 制热, 风速, 当前环境温湿度显示. 
 <br>基于 [HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2](https://developers.apple.com/homekit/faq) , 有 `此配件尚未经过认证可与Homekit配合使用， 因此部分功能可能不可用。` 字样. 
 2. 如果需要出门在外时远程控制 HomeKit 配件, 请将 HomePod、HomePod mini、Apple TV 或 iPad <a href="https://support.apple.com/zh-cn/HT207057">设置为家居中枢. </a>
@@ -51,7 +51,7 @@ Homekit 配对码: 11111111
 </div>
 
 ### IO0 按键定义
-<<<<<<< HEAD
+
 1. 空调遥控识别: 按下 IO0 按键5S, LED 2/S 闪烁, 松开按键, 15S 内普通空调遥控器对准此项目上的遥控接收头(IR_R)按一下开关机键, 等待 LED 闪烁停止. IRremoteESP8266 库, 支持市场上绝大多数空调品牌.
 2. 抹除 Homekit 配对信息: 按下 IO0 按键 10S, LED 2/S 闪烁, 4/S 闪烁, 松开按键, 抹除 Homekit 配对信息.
 3. 恢复设置: 按下 IO0 按键 15S, LED 2/S 闪烁, 4/S 闪烁, 8/S 闪烁, 松开按键, 抹除 Homekit 配对信息, 抹除 Wifi 连接信息, 抹除空调遥控识别信息.
@@ -63,7 +63,7 @@ Homekit 配对码: 11111111
 <li>抹除 Homekit 配对信息: 按下 IO0 按键 10S, LED 2/S 闪烁, 4/S 闪烁, 松开按键, 抹除 Homekit 配对信息. </li>
 <li>恢复设置: 按下 IO0 按键 15S, LED 2/S 闪烁, 4/S 闪烁, 8/S 闪烁, 松开按键, 抹除 Homekit 配对信息, 抹除 Wifi 连接信息, 抹除空调遥控识别信息. </li>
 </ol>
->>>>>>> ec4de44d1c3f1b72db8d025715f4ef3419b26fd5
+
 
 # Thanks
 [HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2](https://developers.apple.com/homekit/faq)
