@@ -10,9 +10,8 @@
 </div>
 
 ### Add accessories 添加 HomeKit 配件
-<br>Homekit 配对码: 11111111
+Homekit 配对码: 11111111
 <br>[Add accessories](https://support.apple.com/en-us/HT204893)
-[GitHub Pages](https://pages.github.com/)
 <div align="center">
 <br><img src="/image/Add_accessories1.jpg"  width="90%"/>
 <br><img src="/image/Add_accessories2.jpg"  width="80%"/>
