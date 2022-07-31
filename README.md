@@ -32,7 +32,8 @@
 </ol>
 
 # Thanks
-https://github.com/tzapu/WiFiManager
+<a href="https://developers.apple.com/homekit/faq">HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2. </a>
+<br>https://github.com/tzapu/WiFiManager
 <br>https://github.com/ludiazv/arduino-SHTC3
 <br>https://github.com/crankyoldgit/IRremoteESP8266
 <br>https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266
