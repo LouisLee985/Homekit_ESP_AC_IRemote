@@ -45,6 +45,12 @@
 * IR_R  红外接收  IO12
 * LED   指示灯    IO2
 * Button按键      IO0
+| IR_T | 红外发射 |IO14|
+| --- | --- |--- |
+| IR_R | 红外接收 |IO12|
+| LED | 指示灯 |IO2 |
+|Button|按键 |IO0 |
+
 
 # Thanks
 [HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2](https://developers.apple.com/homekit/faq)
