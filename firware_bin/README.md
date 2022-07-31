@@ -1,8 +1,8 @@
 # 刷机
 <ol>
 <li>使用针距1.27mm 4P探针刷机夹连接 USB转串口.
-<li>按住IO0按钮上电.
-<li>松开IO0按钮.
+<li>按住IO0按键上电.
+<li>松开IO0按键.
 <li> <a href="https://www.espressif.com.cn/zh-hans/support/download/other-tools">ESP Flash 下载烧录工具:</a>
 <br>chipType:ESP8285,  workMode:develop
 <br>SPIDownload
