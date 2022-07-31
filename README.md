@@ -41,11 +41,14 @@
 
 ### 8266 PIN引脚定义
 
+<div align = "center">
+
 | IR_T | 红外发射 |IO14|
 | :---: | :---: |:---: |
 |**IR_R** | **红外接收** |**IO12**|
 |**LED** |**指示灯** |**IO2**|
 |**Button**|**按键** |**IO0** |
+</div>
 
 # Thanks
 [HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2](https://developers.apple.com/homekit/faq)
@@ -53,4 +56,7 @@
 <br>[IRremoteESP8266](https://github.com/crankyoldgit/IRremoteESP8266) 
 <br>[Arduino-HomeKit-ESP8266](https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266) 
 <br>[arduino-button-long-press-short-press](https://arduinogetstarted.com/tutorials/arduino-button-long-press-short-press)
+<div align = "center">
+
 <br>![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+</div>
