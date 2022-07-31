@@ -17,7 +17,7 @@
 <br>https://support.apple.com/en-us/HT204893
 <h3>空调功能</h3>
 <ol>
-<li>Apple Homekit App 空调功能: 制冷, 制热, 风速, 当前环境温湿度显示. 基于 HomeKit Accessory Protocol Specification(Noncommercial Version) , 有 "此配件尚未经过认证可与Homekit配合使用， 因此部分功能可能不可用。" 字样. 
+<li>Apple Homekit App 空调功能: 制冷, 制热, 风速, 当前环境温湿度显示. <br>基于 HomeKit Accessory Protocol Specification(Noncommercial Version) , 有 "此配件尚未经过认证可与Homekit配合使用， 因此部分功能可能不可用。" 字样. 
 <li>如果需要出门在外时远程控制 HomeKit 配件, 请将 HomePod、HomePod mini、Apple TV 或 iPad <a href="https://support.apple.com/zh-cn/HT207057">设置为家居中枢. </a>
 <li>红外信号反馈: 普通空调遥控器调节制冷, 制热, 温度, 风速等 Apple Homekit 协议支持的动作时, Homekit App 会同步更新状态. 
 </ol>
