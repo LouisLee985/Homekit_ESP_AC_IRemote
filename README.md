@@ -35,7 +35,6 @@
 
 # Thanks
 [HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2](https://developers.apple.com/homekit/faq)
-
 <br>[arduino-SHTC3](https://github.com/ludiazv/arduino-SHTC3) 
 <br>[IRremoteESP8266](https://github.com/crankyoldgit/IRremoteESP8266) 
 <br>[Arduino-HomeKit-ESP8266](https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266) 
