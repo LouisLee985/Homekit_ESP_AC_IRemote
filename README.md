@@ -27,7 +27,7 @@
 <br><img src="/image/HAP-Specification-Non-Commercial-Version.jpg"  width="60%"/>
 <br><img src="/image/Add_accessories3.PNG"  width="80%"/>
 </div>
-### IO0 按键定义
+### IO0按键定义
 <ol>
 <li>空调遥控识别: 按下 IO0 按键5S, LED 2/S 闪烁, 松开按键, 15S 内普通空调遥控器对准此项目上的遥控接收头(IR_R)按一下开关机键, 等待 LED 闪烁停止. IRremoteESP8266 库, 支持市场上绝大多数空调品牌. </li>
 <li>抹除 Homekit 配对信息: 按下 IO0 按键 10S, LED 2/S 闪烁, 4/S 闪烁, 松开按键, 抹除 Homekit 配对信息. </li>
