@@ -39,6 +39,13 @@
 2. 抹除 Homekit 配对信息: 按下 IO0 按键 10S, LED 2/S 闪烁, 4/S 闪烁, 松开按键, 抹除 Homekit 配对信息.
 3. 恢复设置: 按下 IO0 按键 15S, LED 2/S 闪烁, 4/S 闪烁, 8/S 闪烁, 松开按键, 抹除 Homekit 配对信息, 抹除 Wifi 连接信息, 抹除空调遥控识别信息.
 
+### 8266 PIN引脚定义
+
+* IR_T  红外发射  IO14
+* IR_R  红外接收  IO12
+* LED   指示灯    IO2
+* Button按键      IO0
+
 # Thanks
 [HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2](https://developers.apple.com/homekit/faq)
 <br>[arduino-SHTC3](https://github.com/ludiazv/arduino-SHTC3) 
