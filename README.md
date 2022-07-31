@@ -39,11 +39,10 @@
 2. 抹除 Homekit 配对信息: 按下 IO0 按键 10S, LED 2/S 闪烁, 4/S 闪烁, 松开按键, 抹除 Homekit 配对信息.
 3. 恢复设置: 按下 IO0 按键 15S, LED 2/S 闪烁, 4/S 闪烁, 8/S 闪烁, 松开按键, 抹除 Homekit 配对信息, 抹除 Wifi 连接信息, 抹除空调遥控识别信息.
 
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
-
 # Thanks
 [HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2](https://developers.apple.com/homekit/faq)
 <br>[arduino-SHTC3](https://github.com/ludiazv/arduino-SHTC3) 
 <br>[IRremoteESP8266](https://github.com/crankyoldgit/IRremoteESP8266) 
 <br>[Arduino-HomeKit-ESP8266](https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266) 
 <br>[arduino-button-long-press-short-press](https://arduinogetstarted.com/tutorials/arduino-button-long-press-short-press)
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
