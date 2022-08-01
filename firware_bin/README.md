@@ -1,10 +1,10 @@
 # Homekit_Air_Conditioner
 ### 刷机
 <ol>
-<li>使用针距1.27mm 4P探针刷机夹连接 USB转串口.
-<li>按住IO0按键上电.
-<li>松开IO0按键.
-<li> <a href="https://www.espressif.com.cn/zh-hans/support/download/other-tools">ESP Flash 下载烧录工具:</a>
+<li>使用针距1.27mm 4P烧录针或烧录夹,连接 USB转串口.</li>
+<li>按住IO0按键上电.</li>
+<li>松开IO0按键.</li>
+<li> <a href="https://www.espressif.com.cn/zh-hans/support/download/other-tools">ESP Flash 下载烧录工具:</a></li>
 <br>chipType:ESP8285,  workMode:develop
 <br>SPIDownload
 <br>Air_Conditioner_1.0.bin,  @0x0
