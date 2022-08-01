@@ -1,4 +1,10 @@
+
 # Homekit_Air_Conditioner
+<div > <img src="https://visitor-badge.glitch.me/badge?page_id=louislee985.Homekit-Air-Conditioner-Public" /> </div>
+<p align="center">
+<img src="/image/HomeApp_Icon_2.svg" width="10%"/>
+</p>
+
 ### WiFi配网
 
 
@@ -51,14 +57,14 @@
 </div>
 
 # Thanks
-[HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2](https://developers.apple.com/homekit/faq)
-<br>[arduino-SHTC3](https://github.com/ludiazv/arduino-SHTC3) 
-<br>[WiFiManager](https://github.com/tzapu/WiFiManager)
-<br>[IRremoteESP8266](https://github.com/crankyoldgit/IRremoteESP8266) 
-<br>[Arduino-HomeKit-ESP8266](https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266) 
-<br>[arduino-button-long-press-short-press](https://arduinogetstarted.com/tutorials/arduino-button-long-press-short-press)
+* [HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2](https://developers.apple.com/homekit/faq)
+* [arduino-SHTC3](https://github.com/ludiazv/arduino-SHTC3) 
+* [WiFiManager](https://github.com/tzapu/WiFiManager)
+* [IRremoteESP8266](https://github.com/crankyoldgit/IRremoteESP8266) 
+* [Arduino-HomeKit-ESP8266](https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266) 
+* [arduino-button-long-press-short-press](https://arduinogetstarted.com/tutorials/arduino-button-long-press-short-press)
 
-<div align = "center">
-  
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+<div align="center">  
+<img src="https://myoctocat.com/assets/images/base-octocat.svg"  width="10%"/> 
 </div>
+
