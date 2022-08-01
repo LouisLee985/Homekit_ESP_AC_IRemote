@@ -1,4 +1,5 @@
-# 刷机
+# Homekit_Air_Conditioner
+### 刷机
 <ol>
 <li>使用针距1.27mm 4P探针刷机夹连接 USB转串口.
 <li>按住IO0按键上电.
