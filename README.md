@@ -8,13 +8,13 @@
 
 ```mermaid
 graph TD;    
-    Original-Remote --> Air-Conditioner
-    Original-Remote --> ESP8266
-    ESP8266 --> Air-Conditioner
-    ESP8266 --> Wifi-Router
-    Wifi-Router --> ESP8266 
-    Homekit-App --> Wifi-Router
-    Wifi-Router --> Homekit-App    
+    Original-Remote --> Air-Conditioner;
+    Original-Remote --> ESP8266;
+    ESP8266 --> Air-Conditioner;
+    ESP8266 --> Wifi-Router;
+    Wifi-Router --> ESP8266 ;
+    Homekit-App --> Wifi-Router;
+    Wifi-Router --> Homekit-App;  
 ```
 
 
