@@ -5,6 +5,17 @@
 <img src="/image/HomeApp_Icon_2.svg" width="10%"/>
 </p>
 
+
+```mermaid
+  flowchart  TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
+
+
+
 ### WiFi配网
 
 
