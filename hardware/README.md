@@ -1,4 +1,4 @@
-# Homekit_Air_Conditioner
+# Homekit_Air_Conditioner_Remote
 硬件有两个版本，都是采用0402封装，需要很好的焊接技术：
 
 * [5V1A版本](/hardware/AC_IR_Homekit_5V1A_3.0_0402)：外观专门与Apple 5V1A 充电头配套。其它USB充电头也可用。
