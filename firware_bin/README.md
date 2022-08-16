@@ -1,4 +1,4 @@
-# Homekit_Air_Conditioner
+# Homekit_Air_Conditioner_Remote
 ### 刷机
 <ol>
 <li>使用针距1.27mm 4P烧录针或烧录夹,连接 USB转串口.</li>
