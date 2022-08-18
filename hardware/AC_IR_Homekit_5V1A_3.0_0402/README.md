@@ -12,4 +12,5 @@ PCB板1.2mm厚度打样，可与3D外壳适配。
 
 <br><img src="/image/IMG_1002.jpg"  width="60%"/>
 </div>
-<br>外观设计参考：https://github.com/huexpub/IRMQTT
+<br>
+[外观(仅限外观)设计参考：](https://github.com/huexpub/IRMQTT)
