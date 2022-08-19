@@ -58,6 +58,7 @@ graph TD;
 2. 抹除 Homekit 配对信息: 长按 IO0 按键 10S, LED 2/S 闪烁, 4/S 闪烁, 松开按键, 抹除 Homekit 配对信息.
 3. 恢复设置: 长按 IO0 按键 15S, LED 2/S 闪烁, 4/S 闪烁, 8/S 闪烁, 松开按键, 抹除 Homekit 配对信息, 抹除 Wifi 连接信息, 抹除空调遥控识别信息.
 
+<!-- 
 ### ESP8266 PIN引脚定义
 
 <div align = "center">
@@ -68,6 +69,7 @@ graph TD;
 |**LED** |**指示灯** |**IO2**|
 |**Button**|**按键** |**IO0** |
 </div>
+-->
 
 # Thanks
 * [HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2](https://developers.apple.com/homekit/faq)
