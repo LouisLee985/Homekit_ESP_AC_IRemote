@@ -1,4 +1,6 @@
 # Homekit_Air_Conditioner_Remote
+[Homekit_Air_Conditioner_Remote_bin_v1.0.0](https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/releases)
+
 ### 刷机
 <ol>
 <li>使用针距1.27mm 4P烧录针或烧录夹,连接 USB转串口.</li>
