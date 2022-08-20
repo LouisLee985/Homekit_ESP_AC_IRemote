@@ -1,5 +1,5 @@
 # Homekit_Air_Conditioner_Remote
-<br>内置空调机内. 
+<br>4层PCB, 内置空调机内. 
 <br>无需USB公插和红外接收电路, 直接连接到空调数显主板上. 共用主板+5V供电和红外接收. 
 <br>需有电工基础和空调维修经验. 
 
