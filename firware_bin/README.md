@@ -1,5 +1,4 @@
 # Homekit_Air_Conditioner_Remote
-[Homekit_Air_Conditioner_Remote_bin_v1.0.0.bin](https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/releases)
 
 ### 刷机
 <ol>
