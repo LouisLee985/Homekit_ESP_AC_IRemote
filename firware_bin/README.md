@@ -8,7 +8,7 @@
 <li> <a href="https://www.espressif.com.cn/zh-hans/support/download/other-tools">ESP Flash 下载烧录工具:</a></li>
 chipType:ESP8285,  workMode:develop
 <br>SPIDownload
-<br>Air_Conditioner_1.0.bin,  @0x0
+<br>Homekit_AC_Remote_1.0.0.bin,  @0x0
 <br>SPI SPEED 40MHz,  SPI MODE DOUT,  DoNotChgBin不勾选。
 <br>select COM:...,  BAUD:115200.
 <br>ERASE...
