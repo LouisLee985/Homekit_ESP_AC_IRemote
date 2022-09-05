@@ -9,7 +9,7 @@
 chipType:ESP8285,  workMode:develop
 <br>SPIDownload
 <br>Homekit_AC_Remote_1.0.0.bin,  @0x0
-<br>SPI SPEED 40MHz,  SPI MODE DOUT,  DoNotChgBin不勾选。
+<br>SPI SPEED 40MHz,  SPI MODE DOUT <!-- ,  DoNotChgBin不勾选。-->
 <br>select COM:...,  BAUD:115200.
 <br>ERASE...
 <br>START...
