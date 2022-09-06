@@ -8,7 +8,8 @@
 //#include <ir_Fujitsu.h>
 
 #define LOG_PRINT(fmt, args...) printf(("%s,%s,LINE%d: " fmt "\n"), __FILE__, __func__, __LINE__, ##args)
-
+#define  SENSOR_TEMP_OFFSET 0
+#define  SENSOR_HUM_OFFSET 0
 void my_homekit_setup();
 void my_homekit_loop();
 void update_rotation_speed();
