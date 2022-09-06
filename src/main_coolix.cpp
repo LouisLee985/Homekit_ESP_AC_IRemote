@@ -8,8 +8,9 @@
 //#include <ir_Fujitsu.h>
 
 #define LOG_PRINT(fmt, args...) printf(("%s,%s,LINE%d: " fmt "\n"), __FILE__, __func__, __LINE__, ##args)
-#define  SENSOR_TEMP_OFFSET 0
-#define  SENSOR_HUM_OFFSET 0
+#define SENSOR_TEMP_OFFSET 0.0
+#define SENSOR_HUM_OFFSET 0.0
+
 void my_homekit_setup();
 void my_homekit_loop();
 void update_rotation_speed();
@@ -29,7 +30,6 @@ void flipQueueCommand(bool newState)
 	// LOG_PRINT("Flipping queueCommand to %d\n", newState);
 	queueCommand = newState;
 }
-
 
 SHTC3 TH(Wire);
 
@@ -84,9 +84,9 @@ extern "C" void accessory_init();
 void th_sensor_sample()
 {
 	TH.sample();
-	float temperature_c=TH.readTempC()+SENSOR_TEMP_OFFSET;   
-	float humidity=TH.readHumidity()+SENSOR_HUM_OFFSET;
-	
+	float temperature_c = TH.readTempC() + SENSOR_TEMP_OFFSET;
+	float humidity = TH.readHumidity() + SENSOR_HUM_OFFSET;
+
 	// temperature_f=temperature_c*1.8+32;
 	// temperature_f=celsiusToFahrenheit(temperature_c);
 	if (temperature_c != current_temperature.value.float_value || humidity != current_relative_humidity.value.float_value)
