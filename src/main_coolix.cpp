@@ -29,8 +29,7 @@ void flipQueueCommand(bool newState)
 	queueCommand = newState;
 }
 
-float temperature_c = 0.1f, humidity = 0.1f;
-float temperature_f = 0.1f; // Fahrenheit
+
 SHTC3 TH(Wire);
 
 void setup()
@@ -84,8 +83,9 @@ extern "C" void accessory_init();
 void th_sensor_sample()
 {
 	TH.sample();
-	temperature_c = TH.readTempC();
-	humidity = TH.readHumidity();
+	float temperature_c=TH.readTempC()+SENSOR_TEMP_OFFSET;   
+	float humidity=TH.readHumidity()+SENSOR_HUM_OFFSET;
+	
 	// temperature_f=temperature_c*1.8+32;
 	// temperature_f=celsiusToFahrenheit(temperature_c);
 	if (temperature_c != current_temperature.value.float_value || humidity != current_relative_humidity.value.float_value)
