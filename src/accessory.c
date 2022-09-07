@@ -74,10 +74,10 @@ homekit_accessory_t *accessories[] ={
                         &cooling_threshold_temperature,
                 NULL
                 }),
-                HOMEKIT_SERVICE(HUMIDITY_SENSOR, .primary=false, .characteristics=(homekit_characteristic_t*[]) {
-			&current_relative_humidity,
-		NULL
-		}),
+//              HOMEKIT_SERVICE(HUMIDITY_SENSOR, .primary=false, .characteristics=(homekit_characteristic_t*[]) {
+// 			&current_relative_humidity,
+// 		NULL
+// 		}),
                 
         NULL
         }),
