@@ -1,7 +1,6 @@
 #ifndef _ACESSORY_H_
 #define _ACESSORY_H_
 
-
 extern homekit_characteristic_t ac_name;
 extern homekit_characteristic_t optional_name;
 // Thermostat
@@ -11,6 +10,5 @@ extern homekit_characteristic_t target_heater_cooler_state;
 extern homekit_characteristic_t current_relative_humidity;
 extern homekit_characteristic_t cooling_threshold_temperature;
 extern homekit_characteristic_t rotation_speed;
-
 
 #endif // _ACESSORY_H_

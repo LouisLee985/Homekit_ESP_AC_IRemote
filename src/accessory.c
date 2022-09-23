@@ -70,17 +70,15 @@ homekit_accessory_t *accessories[] ={
                 // Optional Characteristics:
                         &optional_name,
                         &rotation_speed,
+			&current_relative_humidity,
                         &cooling_threshold_temperature,
                 NULL
                 }),
-                HOMEKIT_SERVICE(HUMIDITY_SENSOR, .primary=false, .characteristics=(homekit_characteristic_t*[]) {
-			&current_relative_humidity,
-		NULL
-		}),
-                // HOMEKIT_SERVICE(FAN, .primary=false,  .characteristics=(homekit_characteristic_t*[]){
-                //         &fan_active,
-		// NULL
-                // }),
+//              HOMEKIT_SERVICE(HUMIDITY_SENSOR, .primary=false, .characteristics=(homekit_characteristic_t*[]) {
+// 			&current_relative_humidity,
+// 		NULL
+// 		}),
+                
         NULL
         }),
 NULL
