@@ -3,7 +3,7 @@
 <div align="center">
 <br><img src="/image/AC_IR_Homekit_5V1A_3.0_0402.jpg"  width="60%" alt="5V1A版本PCB"/>
 <br>
-<img src="/image/IMG_1000.jpg"  width="60%"/>
+
 </div>
 
 * 3D打印外壳.
