@@ -103,7 +103,6 @@ void th_sensor_sample()
 
 void ac_active_setter(const homekit_value_t value)
 {
-	//   bool oldState = ac_active.value.bool_value;
 	bool on = value.bool_value;
 	ac_active.value.bool_value = on; // sync the value
 	if (on)
