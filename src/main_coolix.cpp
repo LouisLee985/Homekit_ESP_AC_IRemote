@@ -13,12 +13,11 @@
 
 void my_homekit_setup();
 void my_homekit_loop();
-void update_rotation_speed();
 void update_status();
 void th_sensor_sample();
 
 // IR settings
-IRCoolixAC ac(14); // Set the GPIO to be used to sending the message
+IRCoolixAC ac(14); // Set the GPIO to be used to sending the IR_LED message
 // IRFujitsuAC ac(14);
 
 // IRac ac(12);
@@ -77,6 +76,7 @@ extern "C" homekit_characteristic_t current_heater_cooler_state;
 extern "C" homekit_characteristic_t target_heater_cooler_state;
 extern "C" homekit_characteristic_t cooling_threshold_temperature;
 extern "C" homekit_characteristic_t rotation_speed;
+extern "C" homekit_characteristic_t swing_mode;
 
 extern "C" void accessory_init();
 
@@ -97,24 +97,11 @@ void th_sensor_sample()
 	}
 }
 
-// void on_update(homekit_characteristic_t *ch, homekit_value_t value, void *context) {
-//     update_status();
-// }
-
 void ac_active_setter(const homekit_value_t value)
 {
 	bool on = value.bool_value;
 	ac_active.value.bool_value = on; // sync the value
-	if (on)
-	{
-		ac.on();
-		LOG_PRINT("On");
-	}
-	else
-	{
-		ac.off();
-		LOG_PRINT("Off");
-	}
+	on ? ac.on() : ac.off();
 	update_status();
 }
 
@@ -129,7 +116,6 @@ void cooling_threshold_temperature_setter(const homekit_value_t value)
 {
 	float ctemp = value.float_value;
 	cooling_threshold_temperature.value = HOMEKIT_FLOAT(ctemp);
-	// LOG_PRINT("Got value %.f", value.float_value);
 	ac.setTemp(ctemp);
 	flipQueueCommand(true);
 }
@@ -137,8 +123,8 @@ void cooling_threshold_temperature_setter(const homekit_value_t value)
 void rotation_speed_setter(const homekit_value_t value)
 {
 	uint8 sp = value.float_value;
-	uint8 newsp = (uint8)map(sp, 0, 100, 0, 5);
-	rotation_speed.value = HOMEKIT_FLOAT(map(newsp, 0, 5, 0, 100));
+	uint8 newsp = (uint8)(sp / 20);
+	rotation_speed.value = HOMEKIT_FLOAT(((float)newsp) * 20);
 	// coolix Fan: 7 (Fixed),Fan: 4 (Min),Fan: 2 (Med),Fan: 1 (Max),Fan: 5 (Auto)
 	switch (newsp)
 	{
@@ -162,6 +148,19 @@ void rotation_speed_setter(const homekit_value_t value)
 		break;
 	}
 	flipQueueCommand(true);
+}
+
+void swing_mode_setter(const homekit_value_t value)
+{
+	uint8 state = value.uint8_value;
+	swing_mode.value = HOMEKIT_UINT8(state);
+
+	state ? ac.setSwing() : ac.setSwing();
+
+	if (ac_active.value.bool_value)
+	{
+		flipQueueCommand(true);
+	}
 }
 
 void update_status()
@@ -195,6 +194,7 @@ void my_homekit_setup()
 	target_heater_cooler_state.setter = target_heater_cooler_state_setter;
 	cooling_threshold_temperature.setter = cooling_threshold_temperature_setter;
 	rotation_speed.setter = rotation_speed_setter;
+	swing_mode.setter = swing_mode_setter;
 
 	accessory_init();
 	// sprintf(serial, "SN%X\0", ESP.getChipId());

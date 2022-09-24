@@ -45,6 +45,7 @@ homekit_characteristic_t rotation_speed    = HOMEKIT_CHARACTERISTIC_(ROTATION_SP
         .min_step   =(float[]) {10}
         );
 
+homekit_characteristic_t swing_mode = HOMEKIT_CHARACTERISTIC_(SWING_MODE, 0);
 
 void accessory_identify(homekit_value_t _value) {
 	LOG_PRINT("accessory identify\n");
@@ -70,6 +71,7 @@ homekit_accessory_t *accessories[] ={
                 // Optional Characteristics:
                         &optional_name,
                         &rotation_speed,
+			&swing_mode,
 			&current_relative_humidity,
                         &cooling_threshold_temperature,
                 NULL
