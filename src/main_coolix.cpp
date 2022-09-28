@@ -200,10 +200,7 @@ void my_homekit_setup()
 	// sprintf(serial, "SN%X\0", ESP.getChipId());
 	uint8_t mac[WL_MAC_ADDR_LENGTH];
 	WiFi.macAddress(mac);
-	int name_len = snprintf(NULL, 0, "%s_%02X%02X%02X", ac_name.value.string_value, mac[3], mac[4], mac[5]);
-	char *name_value = (char *)malloc(name_len + 1);
-	snprintf(name_value, name_len + 1, "%s_%02X%02X%02X", "HK", mac[3], mac[4], mac[5]);
-	ac_name.value = HOMEKIT_STRING_CPP(name_value);
+	sprintf(ac_name.value.string_value, "HAC-%02X%02X%02X", mac[3], mac[4], mac[5]);
 
 	// LOG_PRINT("about to call arduino_homekit_setup");
 	arduino_homekit_setup(&config);
