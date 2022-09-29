@@ -1,6 +1,9 @@
 #ifndef _WIFI_INFO_H_
 #define _WIFI_INFO_H_
 
+#include <Arduino.h>
+#include <stdio.h>
+
 #if defined(ESP8266)
 #include <ESP8266WiFi.h>
 #elif defined(ESP32)
@@ -9,6 +12,21 @@
 
 const char *ssid = "mywifissid";
 const char *password = "mypassword ";
+
+#define LED_PIN 2
+extern void Led_int();
+
+static uint32_t previousledMillis = 0; 
+void blinkled(uint32_t interval){
+    const uint32_t currentMillis = millis();
+    if (currentMillis - previousledMillis >= interval) {
+        previousledMillis = currentMillis;
+        digitalWrite(LED_PIN, !digitalRead(LED_PIN));
+    } else if (currentMillis - previousledMillis <= 0) {   // if millis overflow (go back to zero), after approximately 50 days.
+        previousledMillis = currentMillis;
+    }
+}
+
 
 void wifi_connect()
 {
@@ -19,9 +37,11 @@ void wifi_connect()
   Serial.println("WiFi connecting...");
   while (!WiFi.isConnected())
   {
+    blinkled(200);
     delay(50);
     Serial.print(".");
   }
+  Led_int();
   Serial.print("\n");
   // Serial.printf("WiFi connected, IP: %s\n", WiFi.localIP().toString().c_str());
   Serial.print("Connected to ");

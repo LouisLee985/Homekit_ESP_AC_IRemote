@@ -5,12 +5,12 @@
 #include "accessory.h"
 
 #define LOG_PRINT(fmt,args...)      printf(("%s,%s,LINE%d: " fmt "\n"),__FILE__,__func__,__LINE__, ##args)
-#define ACCESSORY_NAME              ("HK_Remote")
-#define OPTIONAL_NAME               ("AC_Remote")
+#define ACCESSORY_NAME              ("HAC-Remote")
+#define OPTIONAL_NAME               ("Humidity")
 #define ACCESSORY_SN                ("211985")      //SERIAL_NUMBER
 #define ACCESSORY_MANUFACTURER      ("Louis Lee")
 #define ACCESSORY_MODEL             ("ESP8266")
-#define ACCESSORY_FIRMWARE_REVISION ("1.01")
+#define ACCESSORY_FIRMWARE_REVISION ("1.03")
 #define ACCESSORY_HARDWARE_REVISION ("202205")
 
 
@@ -69,17 +69,17 @@ homekit_accessory_t *accessories[] ={
                         &current_heater_cooler_state,
                         &target_heater_cooler_state,
                 // Optional Characteristics:
-                        &optional_name,
+                        // &optional_name,
                         &rotation_speed,
 			&swing_mode,
-			&current_relative_humidity,
+			// &current_relative_humidity,
                         &cooling_threshold_temperature,
                 NULL
                 }),
-//              HOMEKIT_SERVICE(HUMIDITY_SENSOR, .primary=false, .characteristics=(homekit_characteristic_t*[]) {
-// 			&current_relative_humidity,
-// 		NULL
-// 		}),
+                HOMEKIT_SERVICE(HUMIDITY_SENSOR, .primary=false, .characteristics=(homekit_characteristic_t*[]) {
+			&current_relative_humidity,
+		NULL
+		}),
                 
         NULL
         }),

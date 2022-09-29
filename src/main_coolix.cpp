@@ -11,7 +11,6 @@
 #define LOG_PRINT(fmt, args...) printf(("%s,%s,LINE%d: " fmt "\n"), __FILE__, __func__, __LINE__, ##args)
 #define SENSOR_TEMP_OFFSET 0.0
 #define SENSOR_HUM_OFFSET 0.0
-#define LED_PIN 2
 
 void my_homekit_setup();
 void my_homekit_loop();
@@ -19,10 +18,9 @@ void update_status();
 void th_sensor_sample();
 
 // IR settings
-IRCoolixAC ac(14); // Set the GPIO to be used to sending the IR_LED message
+IRCoolixAC ac(14); // Set IR_TX be used to sending the IR_LED message
 // IRFujitsuAC ac(14);
-
-// IRac ac(12);
+// IRac ac(14);
 
 // Globals
 bool queueCommand = false;
@@ -51,19 +49,21 @@ void setup()
 
 	wifi_connect();
 
-	my_homekit_setup();
+	
 	Wire.begin(4, 5);
-	if (sht.init())
-	{
-		Serial.print("init(): success\n");
-	}
-	else
-	{
-		Serial.print("init(): failed\n");
-	}
+	sht.init();
+	// if (sht.init())
+	// {
+	// 	Serial.print("SHT init(): success\n");
+	// }
+	// else
+	// {
+	// 	Serial.print("SHT init(): failed\n");
+	// }
 	sht.setAccuracy(SHTSensor::SHT_ACCURACY_MEDIUM); // only supported by SHT3x
 	ac.begin();
 	// ac.setUseCelsius(true);
+	my_homekit_setup();
 	WiFi.setSleepMode(WIFI_LIGHT_SLEEP); // WIFI_NONE_SLEEP、WIFI_LIGHT_SLEEP、WIFI_MODEM_SLEEP
 }
 
@@ -80,8 +80,7 @@ void loop()
 	}
 }
 
-// defined in my_accessory.c
-// extern "C" char serial[16];
+
 extern "C" homekit_server_config_t config;
 
 extern "C" homekit_characteristic_t ac_name;
