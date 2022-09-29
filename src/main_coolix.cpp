@@ -1,8 +1,9 @@
 #include <Arduino.h>
 #include <arduino_homekit_server.h>
 #include <stdio.h>
+#include <SHTSensor.h>
 #include "wifi_info.h"
-#include "SHTC3.h"
+
 #include <IRsend.h>
 #include <ir_Coolix.h>
 //#include <ir_Fujitsu.h>
@@ -10,6 +11,7 @@
 #define LOG_PRINT(fmt, args...) printf(("%s,%s,LINE%d: " fmt "\n"), __FILE__, __func__, __LINE__, ##args)
 #define SENSOR_TEMP_OFFSET 0.0
 #define SENSOR_HUM_OFFSET 0.0
+#define LED_PIN 2
 
 void my_homekit_setup();
 void my_homekit_loop();
@@ -30,7 +32,14 @@ void flipQueueCommand(bool newState)
 	queueCommand = newState;
 }
 
-SHTC3 TH(Wire);
+SHTSensor sht;
+
+void Led_int()
+{
+	pinMode(LED_PIN, OUTPUT);
+	digitalWrite(LED_PIN, LOW);
+}
+
 
 void setup()
 {
@@ -38,16 +47,24 @@ void setup()
 	// Serial.begin(115200);
 	while (!Serial) // Wait for the serial connection to be establised.
 		delay(50);
-	pinMode(2, OUTPUT);
-	digitalWrite(2, HIGH);
+	Led_int();
 
 	wifi_connect();
 
 	my_homekit_setup();
 	Wire.begin(4, 5);
-	TH.begin(true);
+	if (sht.init())
+	{
+		Serial.print("init(): success\n");
+	}
+	else
+	{
+		Serial.print("init(): failed\n");
+	}
+	sht.setAccuracy(SHTSensor::SHT_ACCURACY_MEDIUM); // only supported by SHT3x
 	ac.begin();
 	// ac.setUseCelsius(true);
+	WiFi.setSleepMode(WIFI_LIGHT_SLEEP); // WIFI_NONE_SLEEP、WIFI_LIGHT_SLEEP、WIFI_MODEM_SLEEP
 }
 
 void loop()
@@ -83,17 +100,24 @@ extern "C" void accessory_init();
 // get temperature and humidity from sensor
 void th_sensor_sample()
 {
-	TH.sample();
-	float temperature_c = TH.readTempC() + SENSOR_TEMP_OFFSET;
-	float humidity = TH.readHumidity() + SENSOR_HUM_OFFSET;
-
-	// temperature_f=temperature_c*1.8+32;
-	// temperature_f=celsiusToFahrenheit(temperature_c);
-	if (temperature_c != current_temperature.value.float_value || humidity != current_relative_humidity.value.float_value)
+	if (sht.readSample())
 	{
-		current_temperature.value = HOMEKIT_FLOAT(temperature_c);
-		current_relative_humidity.value = HOMEKIT_FLOAT(humidity);
-		homekit_characteristic_notify(&current_temperature, current_temperature.value);
+		float temperature_c = sht.getTemperature() + SENSOR_TEMP_OFFSET;
+		float humidity = sht.getHumidity() + SENSOR_HUM_OFFSET;
+
+		// temperature_f=temperature_c*1.8+32;
+		// temperature_f=celsiusToFahrenheit(temperature_c);
+
+		if (temperature_c != current_temperature.value.float_value || humidity != current_relative_humidity.value.float_value)
+		{
+			current_temperature.value = HOMEKIT_FLOAT(temperature_c);
+			current_relative_humidity.value = HOMEKIT_FLOAT(humidity);
+			homekit_characteristic_notify(&current_temperature, current_temperature.value);
+		}
+	}
+	else
+	{
+		Serial.print("Error in readSample()\n");
 	}
 }
 
@@ -197,12 +221,10 @@ void my_homekit_setup()
 	swing_mode.setter = swing_mode_setter;
 
 	accessory_init();
-	// sprintf(serial, "SN%X\0", ESP.getChipId());
 	uint8_t mac[WL_MAC_ADDR_LENGTH];
 	WiFi.macAddress(mac);
 	sprintf(ac_name.value.string_value, "HAC-%02X%02X%02X", mac[3], mac[4], mac[5]);
 
-	// LOG_PRINT("about to call arduino_homekit_setup");
 	arduino_homekit_setup(&config);
 }
 
@@ -212,7 +234,7 @@ void my_homekit_loop()
 	const uint32_t t = millis();
 	if (t > next_th_sensor_sample_millis)
 	{
-		// report sensor values every 30 seconds
+		// sensor sample every 30 seconds
 		next_th_sensor_sample_millis = t + 30 * 1000;
 		th_sensor_sample();
 	}
