@@ -28,6 +28,7 @@
  </div> 
  
 * 可以另接的温湿度传感器模块 https://github.com/Sensirion/arduino-sht#:~:text=SHTC1,SHT4x.
+https://github.com/Sensirion/arduino-sht#supported-sensors
 <div align="center">  
 <br><img src="/image/SHT3X.jpg"  width="60%"/> 
 </div>
