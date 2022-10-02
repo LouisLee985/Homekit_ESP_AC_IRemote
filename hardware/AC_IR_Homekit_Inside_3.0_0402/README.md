@@ -2,6 +2,7 @@
 * 2层PCB打样, 内置空调机内. 
 * 无需USB公插和红外接收电路, 直接连接到空调数显主板上. 共用主板+5V供电和红外接收. 
 * 需有电工基础和空调维修经验. 
+* SDA,SCL,3V3,GND红色标记处，可用于外接温湿度传感器.
 
 <div align="center">
 <br><img src="/image/AC_IR_Homekit_Inside_3.0_0402.jpg" width="60%"/>
