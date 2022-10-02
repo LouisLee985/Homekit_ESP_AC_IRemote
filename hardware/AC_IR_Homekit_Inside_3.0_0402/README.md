@@ -28,5 +28,6 @@
  </div> 
 * SDA,SCL,3V3,GND红色标记处，可用于另接温湿度传感器.
  <div align="center"> 
-<br><img src="/image/SHT3X.jpg"  width="200"/> 
+ 
+<br><img src="/image/SHT3X.jpg"  width="60%"/> 
 </div>
