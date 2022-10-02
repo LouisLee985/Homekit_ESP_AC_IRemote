@@ -25,7 +25,8 @@
 * 柜机数显主板, 找出+5V, GND, REV(红外接收数据pin), 同样使用. 
 <div align="center">
 <br><img src="/image/IMG_2005.JPG"  width="200"/>
-  
+ </div> 
 * SDA,SCL,3V3,GND红色标记处，可用于另接温湿度传感器.
+ <div align="center"> 
 <br><img src="/image/SHT3X.JPG"  width="200"/> 
 </div>
