@@ -27,7 +27,8 @@
 <br><img src="/image/IMG_2005.JPG"  width="200"/>
  </div> 
  
-* [可以另接的温湿度传感器模块] (https://github.com/Sensirion/arduino-sht#supported-sensors)
+* [可以另接的温湿度传感器模块](https://github.com/Sensirion/arduino-sht#supported-sensors)
+* [arduino-SHTC3](https://github.com/ludiazv/arduino-SHTC3)
 <div align="center">  
 <br><img src="/image/SHT3X.jpg"  width="60%"/> 
 </div>
