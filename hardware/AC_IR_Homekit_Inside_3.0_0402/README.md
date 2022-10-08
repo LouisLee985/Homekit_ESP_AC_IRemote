@@ -27,4 +27,5 @@
 <br><img src="/image/IMG_2005.JPG"  width="200"/>
  </div> 
  
+*  [支持的SHT外接模块](https://github.com/Sensirion/arduino-sht#supported-sensors)
 
