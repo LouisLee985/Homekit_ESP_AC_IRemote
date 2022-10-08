@@ -27,7 +27,7 @@
 <br><img src="/image/IMG_2005.JPG"  width="200"/>
  </div> 
  
-*  [支持的SHT外接模块](https://github.com/Sensirion/arduino-sht#supported-sensors)
+*  [支持的SHT温湿度传感器外接模块](https://github.com/Sensirion/arduino-sht#supported-sensors)
 <div align="center">
 <br><img src="/image/SHT3X.jpg"  width="200"/>
  </div> 
