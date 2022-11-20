@@ -48,21 +48,13 @@ void setup()
 	Led_int();
 
 	wifi_connect();
-
 	
 	Wire.begin(4, 5);
-	sht.init();
-	// if (sht.init())
-	// {
-	// 	Serial.print("SHT init(): success\n");
-	// }
-	// else
-	// {
-	// 	Serial.print("SHT init(): failed\n");
-	// }
+	sht.init();	
 	sht.setAccuracy(SHTSensor::SHT_ACCURACY_MEDIUM); // only supported by SHT3x
+	
 	ac.begin();
-	// ac.setUseCelsius(true);
+	
 	my_homekit_setup();
 	WiFi.setSleepMode(WIFI_LIGHT_SLEEP); // WIFI_NONE_SLEEP、WIFI_LIGHT_SLEEP、WIFI_MODEM_SLEEP
 }
