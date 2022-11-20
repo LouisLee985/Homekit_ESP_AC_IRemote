@@ -1,3 +1,4 @@
+
 #include <homekit/homekit.h>
 #include <homekit/characteristics.h>
 #include <homekit/types.h>
@@ -47,8 +48,10 @@ homekit_characteristic_t rotation_speed    = HOMEKIT_CHARACTERISTIC_(ROTATION_SP
 
 homekit_characteristic_t swing_mode = HOMEKIT_CHARACTERISTIC_(SWING_MODE, 0);
 
+homekit_characteristic_t serial_number = HOMEKIT_CHARACTERISTIC_(SERIAL_NUMBER, ACCESSORY_SN);
+
 void accessory_identify(homekit_value_t _value) {
-	LOG_PRINT("accessory identify\n");
+	LOG_PRINT("accessory identify\n");        
 }
 
 homekit_accessory_t *accessories[] ={
@@ -58,7 +61,8 @@ homekit_accessory_t *accessories[] ={
                         HOMEKIT_CHARACTERISTIC(MANUFACTURER, ACCESSORY_MANUFACTURER),
                         HOMEKIT_CHARACTERISTIC(MODEL, ACCESSORY_MODEL),
                         &ac_name,
-                        HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, ACCESSORY_SN),
+                        // HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, ACCESSORY_SN),
+                        &serial_number,
                         HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, ACCESSORY_FIRMWARE_REVISION),
                         NULL
                 }),
@@ -95,5 +99,5 @@ homekit_server_config_t config = {
 
 
 void accessory_init() {
-	ac_active.value=HOMEKIT_UINT8(0);	
+	ac_active.value=HOMEKIT_UINT8(0);
 }

@@ -16,6 +16,7 @@ const char *password = "mypassword ";
 #define LED_PIN 2
 extern void Led_int();
 
+// extern "C" void led_blink();
 static uint32_t previousledMillis = 0; 
 void blinkled(uint32_t interval){
     const uint32_t currentMillis = millis();

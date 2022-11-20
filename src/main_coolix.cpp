@@ -85,6 +85,7 @@ extern "C" homekit_server_config_t config;
 
 extern "C" homekit_characteristic_t ac_name;
 extern "C" homekit_characteristic_t optional_name;
+extern "C" homekit_characteristic_t serial_number;
 extern "C" homekit_characteristic_t ac_active;
 extern "C" homekit_characteristic_t current_temperature;
 extern "C" homekit_characteristic_t current_relative_humidity;
@@ -218,12 +219,13 @@ void my_homekit_setup()
 	cooling_threshold_temperature.setter = cooling_threshold_temperature_setter;
 	rotation_speed.setter = rotation_speed_setter;
 	swing_mode.setter = swing_mode_setter;
-
-	accessory_init();
+	
 	uint8_t mac[WL_MAC_ADDR_LENGTH];
 	WiFi.macAddress(mac);
 	sprintf(ac_name.value.string_value, "HAC-%02X%02X%02X", mac[3], mac[4], mac[5]);
-
+	sprintf(serial_number.value.string_value,"%02X%02X%02X%02X%02X%02X", mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
+    
+	accessory_init();
 	arduino_homekit_setup(&config);
 }
 
