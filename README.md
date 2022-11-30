@@ -33,7 +33,9 @@ graph TD;
 
 * 1.5.0以下Homekit 配对码: 11111111
 * 1.6.0以上Homekit 配对码: 98521985，也可使用相機掃碼。
-<br><img src="/image/qrcode.png"  width="50%"/>
+    <div align="center">
+    <br><img src="/image/qrcode.png"  width="50%"/>
+    </div>
 * [Add accessories](https://support.apple.com/en-us/HT204893)
 
 <div align="center">
