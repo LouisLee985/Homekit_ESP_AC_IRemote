@@ -32,8 +32,8 @@ graph TD;
 ### Add accessories 添加 HomeKit 配件
 
 * 1.5.0以下Homekit 配对码: 11111111
-* 1.6.0以上Homekit 配对码: 98521985，也可使用[相機掃碼](/image/WiFi_Configure.jpg)。
-<br><img src="/image/qrcode.png"  width="80%"/>
+* 1.6.0以上Homekit 配对码: 98521985，也可使用相機掃碼。
+<br><img src="/image/qrcode.png"  width="50%"/>
 * [Add accessories](https://support.apple.com/en-us/HT204893)
 
 <div align="center">
