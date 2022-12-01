@@ -32,9 +32,11 @@ graph TD;
 ### Add accessories 添加 HomeKit 配件
 
 * 1.5.0以下Homekit 配对码: 111-11-111,  　1.6.0以上Homekit 配对码: 985-21-985。也可以 *`使用相机`*。
+    
     <div align="center">
     <br><img src="/image/qrcode.jpg"  width="40%"/>
     </div>
+    
 * [Add accessories](https://support.apple.com/en-us/HT204893)
 
 <div align="center">
