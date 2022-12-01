@@ -40,15 +40,17 @@ graph TD;
     
 * [向“家庭”App 添加配件](https://support.apple.com/zh-cn/HT204893)
 <!-- https://support.apple.com/en-us/HT204893 -->
-　　使用 iPhone 或 iPad 上的相机扫描上面的二维码。＂家庭＂二维码　　在＂家庭＂中打开
+　3种途径：
+ <br>
+　　１．使用 iPhone 或 iPad 上的相机扫描上面的二维码。　＂家庭＂二维码　　在＂家庭＂中打开
 <br>
-　　或者　1. 打开“家庭”App，然后轻点“添加”。2. 轻点“添加配件”。
+　　２．或者　　打开“家庭”App，然后轻点“添加”；　　轻点“添加配件”。
 
 <div align="center">
 <br><img src="/image/IMG_3209.jpg"  width="80%"/>
 </div>
 <br>
-　　也可以输入配对码。
+　　３．也可以输入配对码。
 
 <div align="center">
 <br><img src="/image/Add_accessories3.jpg"  width="80%"/>
