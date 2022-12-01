@@ -45,7 +45,7 @@ graph TD;
 　　或者　1. 打开“家庭”App，然后轻点“添加”。2. 轻点“添加配件”。
 
 <div align="center">
-<br><img src="/image/IMG_3209.jpg"  width="90%"/>
+<br><img src="/image/IMG_3209.jpg"  width="80%"/>
 </div>
 
 <!-- 
