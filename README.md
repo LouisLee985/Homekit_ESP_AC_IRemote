@@ -39,9 +39,12 @@ graph TD;
     </div>
     
 * [向“家庭”App 添加配件](https://support.apple.com/zh-cn/HT204893)
-<br>1.打开“家庭”App，然后轻点“添加”。
-<br>2.轻点“添加配件”。
-<br>3.使用 iPhone 或 iPad 上的相机扫描配件上或配件文稿中的八位 HomeKit 代码或二维码。
+<!-- https://support.apple.com/en-us/HT204893 -->
+1. 打开“家庭”App，然后轻点“添加”。
+2. 轻点“添加配件”。
+3. 使用 iPhone 或 iPad 上的相机扫描配件上或配件文稿中的八位 HomeKit 代码或二维码。
+
+
 <!-- 
 <div align="center">
 <br><img src="/image/Add_accessories1.jpg"  width="90%"/>
