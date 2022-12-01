@@ -31,22 +31,24 @@ graph TD;
 
 ### Add accessories 添加 HomeKit 配件
 
-* 1.5.0以下Homekit 配对码: 111-11-111,  　1.6.0以上Homekit 配对码: 985-21-985。也可以 *`使用相机`*。
+* 1.5.0以下Homekit 配对码: 111-11-111。
+<br> 1.6.0以上Homekit 配对码: 985-21-985。
     
     <div align="center">
     <br><img src="/image/qrcode.jpg"  width="50%"/>
     </div>
     
 * [向“家庭”App 添加配件](https://support.apple.com/zh-cn/HT204893)
-
-**打开“家庭”App，然后轻点“添加”。
-**轻点“添加配件”。
-**使用 iPhone 或 iPad 上的相机扫描配件上或配件文稿中的八位 HomeKit 代码或二维码。
-
+<br>1.打开“家庭”App，然后轻点“添加”。
+<br>2.轻点“添加配件”。
+<br>3.使用 iPhone 或 iPad 上的相机扫描配件上或配件文稿中的八位 HomeKit 代码或二维码。
+<!-- 
 <div align="center">
 <br><img src="/image/Add_accessories1.jpg"  width="90%"/>
 <br><img src="/image/Add_accessories2.jpg"  width="80%"/>
 </div>
+-->
+<br>
 
 ### 空调功能
 
