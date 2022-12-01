@@ -47,6 +47,12 @@ graph TD;
 <div align="center">
 <br><img src="/image/IMG_3209.jpg"  width="80%"/>
 </div>
+<br>
+　　也可以输入配对码。
+
+<div align="center">
+<br><img src="/image/Add_accessories3.jpg"  width="80%"/>
+</div>
 
 <!-- 
 <div align="center">
