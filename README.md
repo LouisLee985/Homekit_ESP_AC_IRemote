@@ -37,7 +37,7 @@ graph TD;
     <br><img src="/image/qrcode.jpg"  width="50%"/>
     </div>
     
-* [Add accessories](https://support.apple.com/zh-cn/HT204893)
+* [向“家庭”App 添加配件](https://support.apple.com/zh-cn/HT204893)
 
 **打开“家庭”App，然后轻点“添加”。
 **轻点“添加配件”。
