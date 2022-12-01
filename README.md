@@ -37,7 +37,11 @@ graph TD;
     <br><img src="/image/qrcode.jpg"  width="50%"/>
     </div>
     
-* [Add accessories](https://support.apple.com/en-us/HT204893)
+* [Add accessories](https://support.apple.com/zh-cn/HT204893)
+
+**打开“家庭”App，然后轻点“添加”。
+**轻点“添加配件”。
+**使用 iPhone 或 iPad 上的相机扫描配件上或配件文稿中的八位 HomeKit 代码或二维码。
 
 <div align="center">
 <br><img src="/image/Add_accessories1.jpg"  width="90%"/>
