@@ -1,6 +1,7 @@
 # AC_IR_Homekit_USB_TYPE_A
 0603封装，便于焊接，2层PCB打样。
-http://htmlpreview.github.io/?https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/blob/main/hardware/BOM_AC_IR_Homekit_USB_TYPE_A.html
+<a href='http://htmlpreview.github.io/?https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/blob/main/hardware/BOM_AC_IR_Homekit_USB_TYPE_A.html'>C2764054</a>
+
 <div align="center">
 <br><img src="/image/AC_IR_Homekit_USB_TYPE_A1.jpg"  width="60%" alt="AC_IR_Homekit_USB_TYPE_A1"/>
 <br>
