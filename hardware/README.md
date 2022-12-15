@@ -10,7 +10,7 @@
 </div>
 <br>
 
-* <a href='http://htmlpreview.github.io/?https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/blob/main/doc/BOM_AC_IR_Homekit_USB_TYPE_A.html'>BOM表</a>
+* <a href='http://htmlpreview.github.io/?https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/blob/main/image/BOM_AC_IR_Homekit_USB_TYPE_A.html'>BOM表</a>
 
 * 关于测温：
 因PCB过于紧凑，PCB上SHTC3受ESP-01F散热干扰测温始终偏高。
