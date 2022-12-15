@@ -1,5 +1,5 @@
 # AC_IR_Homekit_USB_TYPE_A
-0603封装，便于焊接，2层PCB打样，简洁不简单。
+0603封装，便于焊接，2层PCB打样。
 <div align="center">
 <br><img src="/image/AC_IR_Homekit_USB_TYPE_A1.jpg"  width="60%" alt="AC_IR_Homekit_USB_TYPE_A1"/>
 <br>
