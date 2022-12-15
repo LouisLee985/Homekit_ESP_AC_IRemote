@@ -1,8 +1,5 @@
-# Homekit_Air_Conditioner_Remote
-## 硬件有两个版本：
-
-* [Inside版本](/hardware/AC_IR_Homekit_Inside_3.0_0402)：0402封装，2层PCB打样，安装在空调内部, 直接从空调内部取电和红外反馈。需有电工基础和空调维修经验。
-* [USB_TYPE版本](/hardware/AC_IR_Homekit_USB_TYPE_0603)：0603封装，便于焊接，2层PCB打样，形似U盘，简洁不简单。
+# AC_IR_Homekit_USB_TYPE_A
+0603封装，便于焊接，2层PCB打样，形似U盘，简洁不简单。
 ## 关于测温：
 因PCB过于紧凑，导致PCB上SHTC3受ESP-01F散热干扰而测温始终偏高。可不使用板载温湿度传感器，而另外接 *`温湿度传感器模块`* ，远离散热源。
 * SDA,SCL,3V3,GND红色标记处，用于外接 *`温湿度传感器模块`* 。
@@ -11,3 +8,12 @@
 <div align="center">
 <br><img src="/image/SHT3X.jpg"  width="60%"/>
  </div> 
+ 
+ <div align="center">
+<br><img src="/image/AC_IR_Homekit_USB_TYPE_A1.jpg"  width="60%" alt="AC_IR_Homekit_USB_TYPE_A1"/>
+<br>
+<br><img src="/image/AC_IR_Homekit_USB_TYPE_A2.jpg"  width="60%" alt="AC_IR_Homekit_USB_TYPE_A2"/>
+
+<br>
+
+</div>
