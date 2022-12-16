@@ -19,7 +19,7 @@
 * 如有准确温湿度的需求，可不焊U8,R8,R9,C5，而另外接 *`温湿度传感器模块`* ，远离散热源。
 <br>SDA,SCL,3V3,GND用于外接 *`温湿度传感器模块`* 。
 
-* 支持的SHT温湿度传感器外接模块:　SHTC1，SHTC3，SHTW1，SHTW2，SHT3x-DIS (I2C)，SHT3x-ARP (ratiometric analog voltage output)，SHT85，SHT4x, eg:
+* 支持的SHT温湿度传感器外接模块:　SHTC1，SHTC3，SHTW1，SHTW2，SHT3x-DIS (I2C)，SHT3x-ARP (ratiometric analog voltage output)，SHT85，SHT4x，eg:
 <div align="center">
 <br><img src="/image/SHT3X.jpg"  width="20%"/>
  </div> 
