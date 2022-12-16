@@ -12,7 +12,7 @@
 * <a href='http://htmlpreview.github.io/?https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/blob/main/image/BOM_AC_IR_Homekit_USB_TYPE_A.html'>InteractiveHtmlBom _Bom表</a>
 
 * 关于温湿度：
-<br>因PCB过于紧凑，PCB上温湿度传感器SHTC3受ESP-01F散热干扰测温始终偏高。
+<br>因PCB过于紧凑，PCB上温湿度传感器 *`SHTC3`* 受 *`ESP-01F`* 散热干扰测温始终偏高。
 <br>如果不焊温湿度传感器及相关阻容U8,R8,R9,C5，Homekit App 的温湿度显示为0。
 
 * 如有准确温湿度的需求，可不焊U8,R8,R9,C5，刷入固件后，另外接 *`温湿度传感器模块`* ，远离散热源。
