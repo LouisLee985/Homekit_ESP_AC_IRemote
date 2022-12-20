@@ -6,18 +6,6 @@
 </p>
 
 
-```mermaid
-graph TD;    
-    Original-Remote --> Air-Conditioner;
-    Original-Remote --IR_Feedback--> ESP8266;
-    ESP8266 --> Air-Conditioner;
-    ESP8266 --> Wifi-Router;
-    Wifi-Router --> ESP8266 ;
-    Homekit-App --> Wifi-Router;
-    Wifi-Router --> Homekit-App;  
-```
-
-
 ### WiFi配网
 
 
