@@ -23,7 +23,7 @@
 
    
     <div align="center">
-    <br><img src="/image/qrcode.jpg"  width="50%"/>
+    <br><img src="/image/qrcode.jpg"  width="20%"/>
     </div>
     
 * [向“家庭”App 添加配件](https://support.apple.com/zh-cn/HT204893)
