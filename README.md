@@ -19,16 +19,19 @@
 
 ### Add accessories 添加 HomeKit 配件
 
-* Homekit 配对码: 111-11-111。
+* Homekit 配对码: 985-21-985。
 
-   <!-- 
+   
     <div align="center">
     <br><img src="/image/qrcode.jpg"  width="20%"/>
     </div>
-   
+   　
 * [向“家庭”App 添加配件](https://support.apple.com/zh-cn/HT204893)
-https://support.apple.com/en-us/HT204893 -->
-<!-- 　３种途径：
+<!-- 
+https://support.apple.com/en-us/HT204893 
+-->
+
+３种途径：
  <br>
 　　１．使用 iPhone 或 iPad 上的相机扫描上面的二维码。　＂家庭＂二维码　　在＂家庭＂中打开
 <br>
@@ -39,9 +42,7 @@ https://support.apple.com/en-us/HT204893 -->
 </div>
 <br>
  
-　　３．也可以
--->
-输入配对码。
+　　３．也可以输入配对码。
 
 <div align="center">
 <br><img src="/image/Add_accessories3.jpg"  width="80%"/>
