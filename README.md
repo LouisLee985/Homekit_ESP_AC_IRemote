@@ -20,11 +20,11 @@
 ### Add accessories 添加 HomeKit 配件
 
 * Homekit 配对码: 985-21-985。
-
    
-    <div align="center">
-    <br><img src="/image/qrcode.jpg"  width="20%"/>
-    </div>
+<div align="center">
+<br><img src="/image/qrcode.jpg"  width="20%"/>
+</div>
+
    　
 * [向“家庭”App 添加配件](https://support.apple.com/zh-cn/HT204893) ３种途径：
 <!-- 
