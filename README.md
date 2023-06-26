@@ -5,6 +5,9 @@
 <img src="/image/HomeApp_Icon_2.svg" width="10%"/>
 </p>
 
+<div align="center">
+<br><img src="/image/IMG_3366.JPG"  width="80%"/>
+</div>
 
 ### WiFi配网
 
