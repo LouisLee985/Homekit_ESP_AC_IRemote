@@ -6,7 +6,7 @@
 </p>
 
 <div align="center">
-<br><img src="/image/IMG_3366.JPG"  width="40%"/>
+<br><img src="/image/IMG_3366.JPG"  width="50%"/>
 </div>
 
 ### WiFi配网
