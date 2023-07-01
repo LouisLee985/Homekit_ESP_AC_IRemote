@@ -89,6 +89,7 @@ https://support.apple.com/en-us/HT204893
 |**LED** |**指示灯** |**IO2**|
 |**Button**|**按键** |**IO0** |
 |**SDA**| |**IO4** |
+|**SCL**| |**IO5** |
 </div>
 
 
