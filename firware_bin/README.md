@@ -18,7 +18,7 @@ chipType:ESP8285,  workMode:develop
 <br><img src="/image/flash_download.jpg"  width="50%" alt="flash_download"/>
 </div>
 
-### sparkfun_ir_blaster ESP8266 PIN引脚定义
+### Sparkfun_ir_blaster ESP8266 PIN引脚定义
 
 <div align = "center">
 
@@ -30,6 +30,7 @@ chipType:ESP8285,  workMode:develop
 |**SDA**| |**IO12** |
 |**SCL**| |**IO14** |
 </div>
+
 
 
 <!--
@@ -46,5 +47,3 @@ chipType:ESP8285,  workMode:develop
 |**SCL**| |**IO12** |
 </div>
 -->
-
-
