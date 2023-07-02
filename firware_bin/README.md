@@ -30,3 +30,21 @@ chipType:ESP8285,  workMode:develop
 |**SDA**| |**IO12** |
 |**SCL**| |**IO14** |
 </div>
+
+
+<!--
+### TYSW-012 PIN引脚定义
+
+<div align = "center">
+
+| IR_T | 红外发射 |IO14|
+| :---: | :---: |:---: |
+|**IR_R** | **红外接收** |**IO5**|
+|**LED** |**指示灯** |**IO4**|
+|**Button**|**按键** |**IO13** |
+|**SDA**| |**IO2** |
+|**SCL**| |**IO12** |
+</div>
+-->
+
+
