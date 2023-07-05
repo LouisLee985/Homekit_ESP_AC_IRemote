@@ -22,9 +22,9 @@ chipType:ESP8285,  workMode:develop
 
 <div align = "center">
 
-| IR_T | 红外发射 |IO4|
+| IR_T(OUT) | 红外发射 |IO4|
 | :---: | :---: |:---: |
-|**IR_R** | **红外接收** |**IO13**|
+|**IR_R(IN)** | **红外接收** |**IO13**|
 |**LED** |**指示灯** |**IO5**|
 |**Button**|**按键** |**IO0** |
 |**SDA**| |**IO12** |
@@ -38,9 +38,9 @@ chipType:ESP8285,  workMode:develop
 
 <div align = "center">
 
-| IR_T | 红外发射 |IO14|
+| IR_T(OUT) | 红外发射 |IO14|
 | :---: | :---: |:---: |
-|**IR_R** | **红外接收** |**IO5**|
+|**IR_R(IN)** | **红外接收** |**IO5**|
 |**LED** |**指示灯** |**IO4**|
 |**Button**|**按键** |**IO13** |
 |**SDA**| |**IO2** |
