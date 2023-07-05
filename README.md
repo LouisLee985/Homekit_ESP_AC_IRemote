@@ -83,9 +83,9 @@ https://support.apple.com/en-us/HT204893
 
 <div align = "center">
 
-| IR_T | 红外发射 |IO14|
+| IR_T(OUT) | 红外发射 |IO14|
 | :---: | :---: |:---: |
-|**IR_R** | **红外接收** |**IO12**|
+|**IR_R(IN)** | **红外接收** |**IO12**|
 |**LED** |**指示灯** |**IO2**|
 |**Button**|**按键** |**IO0** |
 |**SDA**| |**IO4** |
