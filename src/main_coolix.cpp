@@ -212,7 +212,7 @@ void my_homekit_setup()
 	rotation_speed.setter = rotation_speed_setter;
 	swing_mode.setter = swing_mode_setter;
 	
-	uint8_t mac[WL_MAC_ADDR_LENGTH];
+	uint8_t mac[6];
 	WiFi.macAddress(mac);
 	sprintf(ac_name.value.string_value, "HAC-%02X%02X%02X", mac[3], mac[4], mac[5]);
 	sprintf(serial_number.value.string_value,"%02X%02X%02X%02X%02X%02X", mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
