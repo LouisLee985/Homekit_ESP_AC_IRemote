@@ -18,7 +18,20 @@ chipType:ESP8285,  workMode:develop
 <br><img src="/image/flash_download.jpg"  width="50%" alt="flash_download"/>
 </div>
 
-### Sparkfun_ir_blaster ESP8266 PIN引脚定义
+### ESP8266 PIN引脚定义
+
+<div align = "center">
+
+| IR_T(OUT) | 红外发射 |IO14|
+| :---: | :---: |:---: |
+|**IR_R(IN)** | **红外接收** |**IO12**|
+|**LED** |**指示灯** |**IO2**|
+|**Button**|**按键** |**IO0** |
+|**SDA**| |**IO4** |
+|**SCL**| |**IO5** |
+</div>
+
+### Sparkfun_ir_blaster PIN引脚定义
 
 <div align = "center">
 
