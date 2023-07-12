@@ -100,4 +100,5 @@ homekit_server_config_t config = {
 
 void accessory_init() {
 	ac_active.value=HOMEKIT_UINT8(0);
+	target_heater_cooler_state.value=HOMEKIT_UINT8(2);
 }
