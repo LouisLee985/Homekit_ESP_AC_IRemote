@@ -93,8 +93,8 @@ NULL
 
 homekit_server_config_t config = {
         .accessories = accessories,
-        .password = "111-11-111",
-        .setupId = "ABC8"
+        .password = "985-21-985",
+        .setupId = "AAAA"
 };
 
 
