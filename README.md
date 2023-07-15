@@ -72,7 +72,7 @@ https://support.apple.com/en-us/HT204893
 <br><img src="/image/Add_accessories3.PNG"  width="80%"/>
 </div>
 
-### IO0 按键定义
+### Button IO0 按键定义
 
 1. 长按 IO0 按键5-10S，LED 2/S 闪烁，松开按键, 空调遥控识别：15S 内普通空调遥控器对准此项目上的遥控接收头(IR_R)按一下开关机键，等待 LED 闪烁停止。IRremoteESP8266 库，支持市场上绝大多数空调品牌。
 2. 长按 IO0 按键 10-15S，LED 2/S 闪烁，4/S 闪烁，松开按键，恢复设置：抹除 Homekit 配对信息，抹除 Wifi 连接信息，抹除空调遥控识别信息。
