@@ -34,7 +34,7 @@
 </div>
 
 ### Sparkfun_ir_blaster PIN引脚定义
-&emsp;&emsp;[ESP8266_WiFi_IR_Blaster](https://github.com/sparkfun/ESP8266_WiFi_IR_Blaster)
+&emsp;&emsp;[SparkFun WiFi IR Blaster (ESP8266)](https://github.com/sparkfun/ESP8266_WiFi_IR_Blaster)
 <div align = "center">
 
 | IR_T(OUT) | 红外发射 |IO4|
