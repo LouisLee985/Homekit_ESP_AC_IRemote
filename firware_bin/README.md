@@ -50,7 +50,7 @@
 
 
 ### TYSW-012 PIN引脚定义
-
+&emsp;&emsp;[TYSW_012](https://developer.tuya.com/cn/docs/iot/tysw012-round-universal-remote-control?id=K9lnm617oupeb)
 <div align = "center">
 
 | IR_T(OUT) | 红外发射 |IO14|
