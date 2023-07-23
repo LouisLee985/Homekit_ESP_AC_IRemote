@@ -35,7 +35,7 @@
 
 ### Sparkfun_ir_blaster PIN引脚定义
 &emsp;&emsp;[SparkFun WiFi IR Blaster (ESP8266)](https://github.com/sparkfun/ESP8266_WiFi_IR_Blaster)
-<br>[Air_Conditioner_Remote_1.6.0-sparkfun_ir_blaster.bin]()
+<br>&emsp;&emsp;[Air_Conditioner_Remote_1.6.0-sparkfun_ir_blaster.bin]()
 <div align = "center">
 
 | IR_T(OUT) | 红外发射 |IO4|
@@ -52,6 +52,7 @@
 
 ### TYSW-012 PIN引脚定义
 &emsp;&emsp;[TYSW_012](https://developer.tuya.com/cn/docs/iot/tysw012-round-universal-remote-control?id=K9lnm617oupeb)
+<br>&emsp;&emsp;[]
 <div align = "center">
 
 | IR_T(OUT) | 红外发射 |IO14|
