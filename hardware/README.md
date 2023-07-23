@@ -13,7 +13,7 @@
 
 * <a href='http://htmlpreview.github.io/?https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/blob/main/image/BOM_AC_IR_Homekit_USB_TYPE_A.html'>InteractiveHtmlBom表</a>
 
-* 固件 [Air_Conditioner_Remote_1.6.0.bin](/firware_bin)
+* [Air_Conditioner_Remote_1.6.0.bin](/firware_bin)
 
 * 关于温湿度：
 <br>因PCB过于紧凑，PCB上温湿度传感器 *`SHTC3`* 受 *`ESP-01F`* 散热干扰，测温始终偏高。
