@@ -53,7 +53,7 @@
 
 ### TYSW-012 PIN引脚定义
 &emsp;&emsp;[TYSW_012](https://developer.tuya.com/cn/docs/iot/tysw012-round-universal-remote-control?id=K9lnm617oupeb)
-<br>&emsp;&emsp;[Air_Conditioner_Remote_1.6.0-TYSW-012.bin]()
+<br>&emsp;&emsp;[Air_Conditioner_Remote_1.6.0-TYSW-012.bin](https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/blob/main/firware_bin/Air_Conditioner_Remote_1.6.0-TYSW-012.bin)
 <div align = "center">
 
 | IR_T(OUT) | 红外发射 |IO14|
