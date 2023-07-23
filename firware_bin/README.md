@@ -22,7 +22,7 @@
 
 ### ESP8266 PIN引脚定义
 &emsp;&emsp;[Homekit-Air-Conditioner-Remote](https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/tree/main/hardware)
-<br>&emsp;&emsp;[Air_Conditioner_Remote_1.6.0.bin](https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/blob/main/firware_bin/Air_Conditioner_Remote_1.6.0.bin)
+<br>&emsp;&emsp;[Air_Conditioner_Remote_1.6.0.bin](/firware_bin)
 <div align = "center">
 
 | IR_T(OUT) | 红外发射 |IO14|
@@ -36,7 +36,7 @@
 
 ### Sparkfun_ir_blaster PIN引脚定义
 &emsp;&emsp;[SparkFun WiFi IR Blaster (ESP8266)](https://github.com/sparkfun/ESP8266_WiFi_IR_Blaster)
-<br>&emsp;&emsp;[Air_Conditioner_Remote_1.6.0-sparkfun_ir_blaster.bin](https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/blob/main/firware_bin/Air_Conditioner_Remote_1.6.0-sparkfun_ir_blaster.bin)
+<br>&emsp;&emsp;[Air_Conditioner_Remote_1.6.0-sparkfun_ir_blaster.bin](/firware_bin)
 <div align = "center">
 
 | IR_T(OUT) | 红外发射 |IO4|
@@ -53,7 +53,7 @@
 
 ### TYSW-012 PIN引脚定义
 &emsp;&emsp;[TYSW_012](https://developer.tuya.com/cn/docs/iot/tysw012-round-universal-remote-control?id=K9lnm617oupeb)
-<br>&emsp;&emsp;[Air_Conditioner_Remote_1.6.0-TYSW-012.bin](https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/blob/main/firware_bin/Air_Conditioner_Remote_1.6.0-TYSW-012.bin)
+<br>&emsp;&emsp;[Air_Conditioner_Remote_1.6.0-TYSW-012.bin](/firware_bin)
 <div align = "center">
 
 | IR_T(OUT) | 红外发射 |IO14|
