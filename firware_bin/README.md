@@ -21,6 +21,7 @@
 -->
 
 ### ESP8266 PIN引脚定义
+[Homekit-Air-Conditioner-Remote]
 &emsp;&emsp;[Air_Conditioner_Remote_1.6.0.bin](https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/blob/main/firware_bin/Air_Conditioner_Remote_1.6.0.bin)
 <div align = "center">
 
