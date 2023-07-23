@@ -21,7 +21,7 @@
 -->
 
 ### ESP8266 PIN引脚定义
-
+[Air_Conditioner_Remote_1.6.0.bin]()
 <div align = "center">
 
 | IR_T(OUT) | 红外发射 |IO14|
