@@ -10,7 +10,7 @@
 </div>
 
 <div align="center">
-<br><img src="/image/homekit1.jpg"  width="60%"/>
+<br><img src="/image/homekit1.jpg"  width="80%"/>
 </div>
 
 
