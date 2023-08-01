@@ -9,6 +9,11 @@
 <br><img src="/image/IMG_3366.JPG"  width="60%"/>
 </div>
 
+<div align="center">
+<br><img src="/image/homekit1.jpg"  width="60%"/>
+</div>
+
+
 ### WiFi配网
 
 
