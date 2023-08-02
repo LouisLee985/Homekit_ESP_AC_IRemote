@@ -5,10 +5,6 @@
 <img src="/image/HomeApp_Icon_2.svg" width="10%"/>
 </p>
 
-<div align="center">
-<br><img src="/image/IMG_3366.JPG"  width="60%"/>
-</div>
-
 <br>
 <div align="center">
 <br><img src="/image/homekit1.jpg"  width="80%"/>
