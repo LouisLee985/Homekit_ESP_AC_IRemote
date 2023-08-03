@@ -2,7 +2,7 @@
 # Homekit_Air_Conditioner_Remote
 
 <p align="center">
-<img src="/image/HomeApp_Icon_2.svg" width="10%"/>
+<img src="/image/HomeApp_Icon_2.svg" width="20%"/>
 </p>
 
 <br>
