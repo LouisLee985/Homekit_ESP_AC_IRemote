@@ -85,7 +85,6 @@ https://support.apple.com/en-us/HT204893
 # Thanks
 * [HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2](https://developers.apple.com/homekit/faq)
 * [arduino-sht](https://github.com/Sensirion/arduino-sht) 
-* [arduino-SHTC3](https://github.com/ludiazv/arduino-SHTC3) 
 * [WiFiManager](https://github.com/tzapu/WiFiManager)
 * [IRremoteESP8266](https://github.com/crankyoldgit/IRremoteESP8266) 
 * [Arduino-HomeKit-ESP8266](https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266) 
