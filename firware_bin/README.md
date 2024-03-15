@@ -14,11 +14,11 @@
 <br>START...
 </ol>
 
-<!--
+
 <div align="center">
-<br><img src="/image/flash_download.jpg"  width="50%" alt="flash_download"/>
+<br><img src="/image/flash_download.png"  width="50%" alt="flash_download"/>
 </div>
--->
+
 
 ### ESP8266 PIN引脚定义
 &emsp;&emsp;[Homekit-Air-Conditioner-Remote](https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/tree/main/hardware)
