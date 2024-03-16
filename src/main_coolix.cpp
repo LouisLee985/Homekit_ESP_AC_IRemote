@@ -18,7 +18,6 @@ void update_status();
 void th_sensor_sample();
 
 // IR settings
-// https://github.com/crankyoldgit/IRremoteESP8266/blob/master/src/IRremoteESP8266.h line 1011
 // https://github.com/crankyoldgit/IRremoteESP8266/blob/d8aee22117b826945724dfb4f1b94d82d68f31f0/src/IRremoteESP8266.h#L1011
 IRCoolixAC ac(14); // Set IR_TX be used to sending the IR_LED message
 // IRFujitsuAC ac(14);
