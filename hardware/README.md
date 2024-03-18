@@ -26,5 +26,5 @@
 
 * 支持的SHT温湿度传感器外接模块:　SHTC1，SHTC3，SHTW1，SHTW2，SHT3x-DIS (I2C)，SHT3x-ARP (ratiometric analog voltage output)，SHT85，SHT4x，e.g.
 <div align="center">
-<br><img src="/image/SHT3X.png"  width="20%"/>
+<br><img src="/image/SHT3X.png"  width="40%"/>
  </div> 
