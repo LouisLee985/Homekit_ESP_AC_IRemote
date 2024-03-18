@@ -39,9 +39,9 @@
 <br>&emsp;&emsp;[Air_Conditioner_Remote_1.6.0-sparkfun_ir_blaster.bin](/firware_bin)
 
 <div align="center">
-<br><img src="/image/SparkFun_WiFi_IR_Blaster_ESP8266.png"  width="50%" alt="SparkFun_WiFi_IR_Blaster_ESP8266"/>
+<br><img src="/image/SparkFun_WiFi_IR_Blaster_ESP8266.png"  width="60%" alt="SparkFun_WiFi_IR_Blaster_ESP8266"/>
 </div>
-
+<!--
 <div align = "center">
 
 | IR_T(OUT) | 红外发射 |IO4|
@@ -52,4 +52,5 @@
 |**SDA**| |**IO12** |
 |**SCL**| |**IO14** |
 </div>
+-->
 
