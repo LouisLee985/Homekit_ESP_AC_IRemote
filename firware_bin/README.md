@@ -39,7 +39,7 @@
 <br>&emsp;&emsp;[Air_Conditioner_Remote_1.6.0-sparkfun_ir_blaster.bin](/firware_bin)
 
 <div align="center">
-<br><img src="/image/SparkFun_WiFi_IR_Blaster_ESP8266.png"  width="60%" alt="SparkFun_WiFi_IR_Blaster_ESP8266"/>
+<br><img src="/image/SparkFun_WiFi_IR_Blaster_ESP8266.png"  width="80%" alt="SparkFun_WiFi_IR_Blaster_ESP8266"/>
 </div>
 <!--
 <div align = "center">
