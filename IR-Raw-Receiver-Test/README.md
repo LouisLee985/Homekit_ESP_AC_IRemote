@@ -12,10 +12,11 @@
 <h2>Data format </h2>
 <h3>The haa_ir_capture_IO_12.bin is compiled from <a href="https://github.com/RavenSystem/esp-homekit-devices/releases/tag/HAAIR_1.0.0">HAA IR Capture Tool v1.0</a></h3>
 <p>
-
-`Packets: 199`
-<br>`Standard Format`
-<br>`+ 4323 - 4515 +  494 - 1690 +  493 -  585 ... ... ...`
+```
+Packets: 199
+Standard Format
++ 4323 - 4515 +  494 - 1690 +  493 -  585 ... ... ...
+```
 ### HAA RAW Format
 
 ```
