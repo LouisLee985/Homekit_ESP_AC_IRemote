@@ -8,10 +8,10 @@
 <li>Output is transmitted to UART. You can read it using screen command or any other serial reader.</li>
 <li>To get a good capture, put IR transmitter very near of receiver (1cm - 0.4inch).</li>
 </ol>
-</p>
-<h2>Data format </h2>
-<h3>The haa_ir_capture_IO_12.bin is compiled from <a href="https://github.com/RavenSystem/esp-homekit-devices/releases/tag/HAAIR_1.0.0">HAA IR Capture Tool v1.0</a></h3>
-<p>
+
+## Data format
+### The haa_ir_capture_IO_12.bin is compiled from <a href="https://github.com/RavenSystem/esp-homekit-devices/releases/tag/HAAIR_1.0.0">HAA IR Capture Tool v1.0</a></h3>
+
 
 ```
 Packets: 199
@@ -24,10 +24,9 @@ Standard Format
 ```
 JhJkAODFAOAhAODFAODFAOAhATAcATDAATAcATAcATDAATAcATAcATDAATDAATAcATDAATDAATDAATDAATDAATDAATDAATDAATDAATAcATAcATAcATAcATAcATAcATAcATAcATDAATAcATAcATDAATDAATDAATAcATAiANAcATDAATDAATAcATAcATAcATDAATDAATL1JoJ#ATDAASAdASDAATDAATAcATAcASDAATAcATAcASDAATAcASAdASDBASDBASAdASDBASDAASDBASDBASDBASDBASDBASDBASDBASAdASAdASAdASAdASAdASAdASAdASAdASDBARAdASAdASDBARDCARDBARAeARAeARAeARDCARDCARAeARAeARAeARDCARDCAR
 ```
-</p>
-<p>
-<br>
-<h3>IRrecvDumpV2_IO_12.bin is compiled from <a href="https://github.com/crankyoldgit/IRremoteESP8266">IRremoteESP8266</a></h3>
+
+
+### IRrecvDumpV2_IO_12.bin is compiled from <a href="https://github.com/crankyoldgit/IRremoteESP8266">IRremoteESP8266</a>
 
 ```
 Timestamp : 000470.742,  Library : v2.8.2
