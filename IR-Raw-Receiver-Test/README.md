@@ -26,13 +26,10 @@ JhJkAODFAOAhAODFAODFAOAhATAcATDAATAcATAcATDAATAcATAcATDAATDAATAcATDAATDAATDAATDA
 <br>
 <h3>IRrecvDumpV2_IO_12.bin is compiled from <a href="https://github.com/crankyoldgit/IRremoteESP8266">IRremoteESP8266</a></h3>
 
-`Timestamp : 000470.742,  Library : v2.8.2`
-<br>
-`Code : 0xA1834AFFFF56 (48 Bits)`
-<br>
-`Protocol: 34 (MIDEA), Type: 1 (Command), Power: On, Mode: 3 (Heat), Celsius: On, Temp: 27C/80F, On Timer: Off, Off Timer: Off, Fan: 0 (Auto), Sleep: Off, Swing(V): -, Econo: -, Turbo: -, Quiet: Off, Light: -, Clean: -, 8C Heat: -`
-<br>
-`uint16_t rawData[199] = {4444, 4560,  536, 1714,  538, 618,  ... ... ... };  // MIDEA A1834AFFFF56`
-<br>
-`uint64_t data = 0xA1834AFFFF56;`
-</p>
+```
+Timestamp : 000470.742,  Library : v2.8.2
+Code : 0xA1834AFFFF56 (48 Bits)
+Protocol: 34 (MIDEA), Type: 1 (Command), Power: On, Mode: 3 (Heat), Celsius: On, Temp: 27C/80F, On Timer: Off, Off Timer: Off, Fan: 0 (Auto), Sleep: Off, Swing(V): -, Econo: -, Turbo: -, Quiet: Off, Light: -, Clean: -, 8C Heat: -
+uint16_t rawData[199] = {4444, 4560,  536, 1714,  538, 618,  ... ... ... };  // MIDEA A1834AFFFF56
+uint64_t data = 0xA1834AFFFF56;
+```
