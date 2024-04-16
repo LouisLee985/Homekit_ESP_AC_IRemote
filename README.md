@@ -1,6 +1,6 @@
 
 # Homekit_Air_Conditioner_Remote
-[[Release](https://img.shields.io/github/v/tag/LouisLee985/Homekit-Air-Conditioner-Remote?color=red&label=release)](https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/releases/latest)
+[![Release](https://img.shields.io/github/v/tag/LouisLee985/Homekit-Air-Conditioner-Remote?color=red&label=release)](https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/releases/latest)
 
 <p align="center">
 <img src="/image/HomeApp_Icon_2.svg" width="20%"/>
