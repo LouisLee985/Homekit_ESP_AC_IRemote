@@ -6,9 +6,9 @@
 <img src="/image/HomeApp_Icon_2.svg" width="20%"/>
 </p>
 
-<br>
+
 <div align="center">
-<br><img src="/image/homekit1.jpg"  width="80%"/>
+<br><img src="/image/homekit1.jpg"  width="90%"/>
 </div>
 
 
