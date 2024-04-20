@@ -7,8 +7,7 @@
 </p>
 
 <div align="center">
-<svg id="Livello_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-  viewBox="0 0 2860 1024" height="60">
+<img src=" svg id="Livello_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"  viewBox="0 0 2860 1024" height="60">
   <g>
 	<path fill="#FFFFFF" d="M227.6,0h568.9C922.1,0,1024,101.9,1024,227.6v568.9
 		c0,125.7-101.9,227.6-227.6,227.6H227.6C101.9,1024,0,922.1,0,796.4V227.6C0,101.9,101.9,0,227.6,0z"/>
@@ -39,6 +38,7 @@
 	</g>
 </g>
 </svg>
+/>			
 </div>
 
 <div align="center">
