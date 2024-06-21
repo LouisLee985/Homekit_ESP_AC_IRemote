@@ -7,7 +7,7 @@
 </p>
 
 <div align="center">
-<img src="/image/homekit1.jpg"  width="90%"/>
+<img src="/image/process.svg"  width="90%"/>
 </div>
 
 
