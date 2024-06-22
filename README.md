@@ -11,12 +11,9 @@
 </div>
 
 
-### [WiFi配网](https://github.com/tzapu/WiFiManager?tab=readme-ov-file#how-it-works)
+### [WiFiManager](https://github.com/tzapu/WiFiManager?tab=readme-ov-file#how-it-works)
 
 
-1. 上电后，ESP8266在未联网/断网时LED 2/S闪烁，生成ESP_XXXXXX的热点，XXXXXX是8266芯片的MAC。
-2. 手机连接该热点，自动弹出配网页面。如果未自动弹出可手动访问192.168.4.1。
-3. Configure WiFi，选择 WiFi，输入密码，Save，连接成功后会自动退出配网模式并关闭 ESP_XXXXXX 热点。
 
 <div align="center">
 <br><img src="/image/WiFi_Configure.jpg"  width="80%"/>
