@@ -11,7 +11,7 @@
 </div>
 
 
-### WiFi配网
+### [WiFi配网](https://github.com/tzapu/WiFiManager?tab=readme-ov-file#how-it-works)
 
 
 1. 上电后，ESP8266在未联网/断网时LED 2/S闪烁，生成ESP_XXXXXX的热点，XXXXXX是8266芯片的MAC。
