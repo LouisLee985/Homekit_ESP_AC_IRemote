@@ -18,7 +18,10 @@
 ### HomeKit setup
 In your iOS device, open Home App and follow normal steps to [add a new accessory](https://support.apple.com/en-us/104998).
 
-* Homekit Normal Code: 985-21-985。
+* Homekit Normal Code:
+  ```
+  985-21-985
+  ```
 
 * Homekit QR-Code:
 <div align="center">
