@@ -9,10 +9,11 @@
 <p align="center">
 <img src="/image/process.svg"  width="90%"/>
 </p>
-
+<br>
 
 ### [WiFiManager](https://github.com/tzapu/WiFiManager?tab=readme-ov-file#how-it-works)
 
+<br>
 
 ### HomeKit setup
 In your iOS device, open Home App and follow normal steps to [add a new accessory](https://support.apple.com/en-us/104998).
@@ -38,6 +39,7 @@ In your iOS device, open Home App and follow normal steps to [add a new accessor
 <br><img src="/image/HAP-Specification-Non-Commercial-Version.jpg"  width="60%"/>
 <br><img src="/image/Add_accessories3.PNG"  width="80%"/>
 </div>
+<br>
 
 ### Button IO0 按键定义
 
@@ -45,7 +47,7 @@ In your iOS device, open Home App and follow normal steps to [add a new accessor
 2. 长按 IO0 按键 10-15S，LED 2/S 闪烁，4/S 闪烁，松开按键，恢复设置：抹除 Homekit 配对信息，抹除 Wifi 连接信息，抹除空调遥控识别信息。
  
 
-
+<br>
 
 # Thanks
 * [HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2](https://developers.apple.com/homekit/faq)
