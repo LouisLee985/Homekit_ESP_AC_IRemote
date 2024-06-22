@@ -6,18 +6,13 @@
 <img src="/image/HomeApp_Icon_2.svg" width="20%"/>
 </p>
 
-<div align="center">
+<p align="center">
 <img src="/image/process.svg"  width="90%"/>
-</div>
+</p>
 
 
 ### [WiFiManager](https://github.com/tzapu/WiFiManager?tab=readme-ov-file#how-it-works)
 
-
-
-<div align="center">
-<br><img src="/image/WiFi_Configure.jpg"  width="80%"/>
-</div>
 
 ### Add accessories 添加 HomeKit 配件
 
