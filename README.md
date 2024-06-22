@@ -12,7 +12,13 @@
 <br>
 
 ### [WiFiManager](https://github.com/tzapu/WiFiManager?tab=readme-ov-file#how-it-works)
-
+* When your ESP starts up, it sets it up in Station mode and tries to connect to a previously saved Access Point
+* if this is unsuccessful (or no previous network saved) it moves the ESP into Access Point mode and spins up a DNS and WebServer (default ip 192.168.4.1)
+* using any wifi enabled device with a browser (computer, phone, tablet) connect to the newly created Access Point
+* because of the Captive Portal and the DNS server you will either get a 'Join to network' type of popup or get any domain you try to access redirected to the configuration portal
+* choose one of the access points scanned, enter password, click save
+* ESP will try to connect. If successful, it relinquishes control back to your app. If not, reconnect to AP and reconfigure.
+* There are options to change this behavior or manually start the configportal and webportal independantly as well as run them in non blocking mode.
 <br>
 
 ### HomeKit setup
