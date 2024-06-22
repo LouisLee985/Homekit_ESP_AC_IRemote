@@ -31,7 +31,7 @@
 </div>
 
    　
-* [向“家庭”App 添加配件](https://support.apple.com/zh-cn/HT204893) ３种途径：
+* [向“家庭”App 添加配件](https://support.apple.com/en-us/104998) ３种途径：
 <!-- 
 https://support.apple.com/en-us/HT204893 
 -->
