@@ -14,43 +14,16 @@
 ### [WiFiManager](https://github.com/tzapu/WiFiManager?tab=readme-ov-file#how-it-works)
 
 
-### Add accessories 添加 HomeKit 配件
+### HomeKit setup
+In your iOS device, open Home App and follow normal steps to [add a new accessory](https://support.apple.com/en-us/104998).
 
-* Homekit 配对码：985-21-985。
-   
+* Homekit Normal Code: 985-21-985。
+
+* Homekit QR-Code:
 <div align="center">
 <br><img src="/image/qrcode.jpg"  width="20%"/>
-</div>
+</div>  　
 
-   　
-* [向“家庭”App 添加配件](https://support.apple.com/en-us/104998) ３种途径：
-<!-- 
-https://support.apple.com/en-us/HT204893 
--->
-
-
- <br>
-　　１．使用 iPhone 或 iPad 上的相机扫描上面的二维码。　＂家庭＂二维码　　在＂家庭＂中打开
-<br>
-　　２．或者　　打开“家庭”App，然后轻点“添加”；　　轻点“添加配件”。
-
-<div align="center">
-<br><img src="/image/IMG_3209.jpg"  width="80%"/>
-</div>
-<br>
- 
-　　３．也可以输入配对码。
-
-<div align="center">
-<br><img src="/image/Add_accessories3.jpg"  width="80%"/>
-</div>
-
-<!-- 
-<div align="center">
-<br><img src="/image/Add_accessories1.jpg"  width="90%"/>
-<br><img src="/image/Add_accessories2.jpg"  width="80%"/>
-</div>
--->
 <br>
 
 ### 空调功能
