@@ -30,7 +30,7 @@
  </div> 
 
 
-### AC_IRemote_ESP-01F PIN
+## AC_IRemote_ESP-01F PIN
 
 <div align = "center">
 
@@ -43,7 +43,7 @@
 |**SCL**|**IO5** |
 </div>
 
-### Sparkfun_ir_blaster PIN
+## Sparkfun_ir_blaster PIN
 &emsp;&emsp;[SparkFun WiFi IR Blaster (ESP8266)](https://github.com/sparkfun/ESP8266_WiFi_IR_Blaster)
 
 
