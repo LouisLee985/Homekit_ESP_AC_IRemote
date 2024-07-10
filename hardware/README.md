@@ -31,7 +31,6 @@
 
 
 ### AC_IRemote_ESP-01F PIN
-&emsp;&emsp;[Homekit-Air-Conditioner-Remote](https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/tree/main/hardware)
 
 <div align = "center">
 
