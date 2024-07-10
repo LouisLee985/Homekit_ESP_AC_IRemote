@@ -1,4 +1,4 @@
-# AC_IR_Homekit_USB_TYPE_A
+# AC_IRemote_ESP-01F
 * 2层PCB打样，0603封装，便于焊接。
 
 <div align="center">
@@ -30,7 +30,7 @@
  </div> 
 
 
-### ESP8285 PIN
+### AC_IRemote_ESP-01F PIN
 &emsp;&emsp;[Homekit-Air-Conditioner-Remote](https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/tree/main/hardware)
 
 <div align = "center">
