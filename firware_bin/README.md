@@ -1,4 +1,4 @@
-# Homekit_Air_Conditioner_Remote
+# Homekit_ESP_AC_IRemote
 
 ### Installation
 <ol>
@@ -19,21 +19,21 @@
 </div>
 
 
-### ESP8266 PIN引脚定义
+### ESP8285 PIN
 &emsp;&emsp;[Homekit-Air-Conditioner-Remote](https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/tree/main/hardware)
 <br>&emsp;&emsp;[Air_Conditioner_Remote_1.6.0.bin](/firware_bin)
 <div align = "center">
 
-| IR_T(OUT) | 红外发射 |IO14|
-| :---: | :---: |:---: |
-|**IR_R(IN)** | **红外接收** |**IO12**|
-|**LED** |**指示灯** |**IO2**|
-|**Button**|**按键** |**IO0** |
-|**SDA**| |**IO4** |
-|**SCL**| |**IO5** |
+| IR_T(OUT) |IO14|
+| :---: |:---: |
+|**IR_R(IN)** |**IO12**|
+|**LED** |**IO2**|
+|**Button**|**IO0** |
+|**SDA**|**IO4** |
+|**SCL**|**IO5** |
 </div>
 
-### Sparkfun_ir_blaster PIN引脚定义
+### Sparkfun_ir_blaster PIN
 &emsp;&emsp;[SparkFun WiFi IR Blaster (ESP8266)](https://github.com/sparkfun/ESP8266_WiFi_IR_Blaster)
 <br>&emsp;&emsp;[Air_Conditioner_Remote_1.6.0-sparkfun_ir_blaster.bin](/firware_bin)
 
@@ -43,13 +43,13 @@
 
 <div align = "center">
 
-| IR_T(OUT) | 红外发射 |IO4|
-| :---: | :---: |:---: |
-|**IR_R(IN)** | **红外接收** |**IO13**|
-|**LED** |**指示灯** |**IO5**|
-|**Button**|**按键** |**IO0** |
-|**SDA**| |**IO12** |
-|**SCL**| |**IO14** |
+| IR_T(OUT) |IO4|
+| :---: |:---: |
+|**IR_R(IN)** |**IO13**|
+|**LED** |**IO5**|
+|**Button**|**IO0** |
+|**SDA**|**IO12** |
+|**SCL**|**IO14** |
 </div>
 
 
