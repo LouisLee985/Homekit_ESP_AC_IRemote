@@ -21,7 +21,7 @@
 
 ### ESP8285 PIN
 &emsp;&emsp;[Homekit-Air-Conditioner-Remote](https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/tree/main/hardware)
-<br>&emsp;&emsp;[Air_Conditioner_Remote_1.6.0.bin](/firware_bin)
+
 <div align = "center">
 
 | IR_T(OUT) |IO14|
@@ -35,7 +35,7 @@
 
 ### Sparkfun_ir_blaster PIN
 &emsp;&emsp;[SparkFun WiFi IR Blaster (ESP8266)](https://github.com/sparkfun/ESP8266_WiFi_IR_Blaster)
-<br>&emsp;&emsp;[Air_Conditioner_Remote_1.6.0-sparkfun_ir_blaster.bin](/firware_bin)
+
 
 <div align="center">
 <br><img src="/image/SparkFun_WiFi_IR_Blaster_ESP8266.png"  width="60%" alt="SparkFun_WiFi_IR_Blaster_ESP8266"/>
