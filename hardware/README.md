@@ -46,7 +46,6 @@
 ## Sparkfun_ir_blaster PIN
 &emsp;&emsp;[SparkFun WiFi IR Blaster (ESP8266)](https://github.com/sparkfun/ESP8266_WiFi_IR_Blaster)
 <br>
-&emsp;&emsp;[Air_Conditioner_Remote_1.6.0-sparkfun_ir_blaster.bin](https://github.com/LouisLee985/Homekit_ESP_AC_IRemote/blob/main/firware_bin/Air_Conditioner_Remote_1.6.0-sparkfun_ir_blaster.bin)
 
 <div align="center">
 <br><img src="/image/SparkFun_WiFi_IR_Blaster_ESP8266.png"  width="60%" alt="SparkFun_WiFi_IR_Blaster_ESP8266"/>
