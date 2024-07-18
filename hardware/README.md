@@ -45,19 +45,4 @@
 
 ## Sparkfun_ir_blaster PIN
 &emsp;&emsp;[SparkFun WiFi IR Blaster (ESP8266)](https://github.com/sparkfun/ESP8266_WiFi_IR_Blaster)
-<br>
 
-<div align="center">
-<br><img src="/image/SparkFun_WiFi_IR_Blaster_ESP8266.png"  width="60%" alt="SparkFun_WiFi_IR_Blaster_ESP8266"/>
-</div>
-
-<div align = "center">
-
-| IR_T(OUT) |IO4|
-| :---: |:---: |
-|**IR_R(IN)** |**IO13**|
-|**LED** |**IO5**|
-|**Button**|**IO0** |
-|**SDA**|**IO12** |
-|**SCL**|**IO14** |
-</div>
