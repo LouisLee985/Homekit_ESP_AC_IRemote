@@ -50,7 +50,7 @@ In your iOS device, open Home App and follow normal steps to [add a new accessor
 </div>
 <br>
 
-### Button IO0 按键定义
+### Button IO0
 
   - Long pressed&ensp;&ensp;5-10 second:&emsp;Set up the infrared protocol.
   - Long pressed&ensp;10-15 second:&emsp;Restore settings.
@@ -68,4 +68,3 @@ In your iOS device, open Home App and follow normal steps to [add a new accessor
 <div align="center">  
 <img src="https://myoctocat.com/assets/images/base-octocat.svg"  width="10%"/> 
 </div>
-
