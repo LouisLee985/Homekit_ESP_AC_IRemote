@@ -2,7 +2,8 @@
 * 2层PCB，0603封装，便于焊接。
 
 <div align="center">
-
+<br><img src="/image/AC_IR_Homekit_USB_TYPE_A2.jpg"  width="60%" alt="AC_IR_Homekit_USB_TYPE_A2"/>
+<br>
 <br><img src="/image/AC_IR_Homekit_USB_TYPE_A3.png"  width="60%" alt="AC_IR_Homekit_USB_TYPE_A3"/>
 <br> 
 <br><img src="/image/IMG_3366.png"  width="60%"/>
