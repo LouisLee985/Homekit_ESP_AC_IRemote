@@ -27,7 +27,7 @@
  </div> 
 
 
-## AC_IRemote_ESP-01F PIN
+* AC_IRemote_ESP-01F PIN
 
 <div align = "center">
 
@@ -40,6 +40,7 @@
 |**SCL**|**IO5** |
 </div>
 
-## Sparkfun_ir_blaster PIN
+## Sparkfun_ir_blaster 
+https://github.com/LouisLee985/Homekit_ESP_AC_IRemote/releases/download/v1.2.0/Air_Conditioner_Remote_1.2.0-sparkfun_ir_blaster.bin
 &emsp;&emsp;[SparkFun WiFi IR Blaster (ESP8266)](https://github.com/sparkfun/ESP8266_WiFi_IR_Blaster)
 
