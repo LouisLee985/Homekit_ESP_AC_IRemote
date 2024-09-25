@@ -41,5 +41,6 @@
 </div>
 
 ## [Sparkfun_ir_blaster ](https://github.com/sparkfun/ESP8266_WiFi_IR_Blaster)
-&emsp;&emsp;SparkFun WiFi IR Blaster (ESP8266) is supported.
+* SparkFun WiFi IR Blaster (ESP8266) is supported. 
+&emsp;&emsp;
 [sparkfun_ir_blaster.bin](https://github.com/LouisLee985/Homekit_ESP_AC_IRemote/releases/download/v1.2.0/Air_Conditioner_Remote_1.2.0-sparkfun_ir_blaster.bin)
