@@ -1,5 +1,5 @@
 # AC_IRemote_ESP-01F
-* 2层PCB，0603封装，便于焊接。
+* <a href='http://htmlpreview.github.io/?https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/blob/main/image/BOM_AC_IR_Homekit_USB_TYPE_A.html'>InteractiveHtmlBom</a>
 
 <div align="center">
 <br><img src="/image/AC_IR_Homekit_USB_TYPE_A2.jpg"  width="60%" alt="AC_IR_Homekit_USB_TYPE_A2"/>
@@ -11,17 +11,17 @@
 </div>
 <br>
 
-* <a href='http://htmlpreview.github.io/?https://github.com/LouisLee985/Homekit-Air-Conditioner-Remote/blob/main/image/BOM_AC_IR_Homekit_USB_TYPE_A.html'>InteractiveHtmlBom</a>
 
 
-* 关于温湿度：
-<br>因PCB过于紧凑，PCB上温湿度传感器 *`SHTC3`* 受 *`ESP-01F`* 散热干扰，测温始终偏高。
-<br>可不焊温湿度传感器及相关阻容U8,R8,R9,C5，Homekit App 的温湿度显示为0。
 
-* 如有准确温湿度的需求，不焊U8,R8,R9,C5，刷入固件后，另外接 *`温湿度传感器模块`* ，远离散热源。
-<br>SDA,SCL,3V3,GND用于外接 *`温湿度传感器模块`* 。
+* Regarding Temperature and Humidity:
+<br>Due to the compactness of the PCB, the temperature and humidity sensor *`SHTC3`*  on the PCB is affected by the heat dissipation of the *`ESP-01F`*  ,resulting in consistently higher temperature readings.
+<br>The temperature and humidity sensor and related resistors and capacitors U8,R8,R9,C5，can be left unsoldered, and the temperature and humidity display in the HomeKit App will show 0.
 
-* 支持的SHT温湿度传感器外接模块:　SHTC1，SHTC3，SHTW1，SHTW2，SHT3x-DIS (I2C)，SHT3x-ARP (ratiometric analog voltage output)，SHT85，SHT4x，e.g.
+* If accurate temperature and humidity readings are required, do not solder U8,R8,R9,C5， After flashing the firmware, connect an external *`temperature and humidity sensor module`* , keeping it away from heat sources.
+<br>SDA,SCL,3V3,GNDare used for connecting an external *`temperature and humidity sensor module`*.
+
+* Supported external SHT *`temperature and humidity sensor modules`*: 　SHTC1，SHTC3，SHTW1，SHTW2，SHT3x-DIS (I2C)，SHT3x-ARP (ratiometric analog voltage output)，SHT85，SHT4x，e.g.
 <div align="center">
 <br><img src="/image/SHT3X.png"  width="40%"/>
  </div> 
