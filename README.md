@@ -46,7 +46,6 @@ In your iOS device, open Home App and follow normal steps to [add a new accessor
 
 <div align="center">
 <br><img src="/image/HAP-Specification-Non-Commercial-Version.jpg"  width="60%"/>
-<br><img src="/image/Add_accessories3.PNG"  width="80%"/>
 </div>
 <br>
 
