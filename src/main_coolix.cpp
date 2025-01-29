@@ -1,241 +1,180 @@
-#include <Arduino.h>
-#include <arduino_homekit_server.h>
-#include <stdio.h>
-#include <SHTSensor.h>
-#include "wifi_info.h"
+#include <Arduino.h>                  // Core Arduino library
+#include <arduino_homekit_server.h>   // HomeKit server library
+#include <SHTSensor.h>                // SHT temperature and humidity sensor library
+#include "wifi_info.h"                // WiFi connection details (SSID and password)
+#include <IRsend.h>                   // IR send library
+#include <ir_Coolix.h>                // Coolix AC IR protocol library
 
-#include <IRsend.h>
-#include <ir_Coolix.h>
-//#include <ir_Fujitsu.h>
-
+// Debug logging macro to print file name, function name, and line number
 #define LOG_PRINT(fmt, args...) printf(("%s,%s,LINE%d: " fmt "\n"), __FILE__, __func__, __LINE__, ##args)
-#define SENSOR_TEMP_OFFSET 0.0
-#define SENSOR_HUM_OFFSET 0.0
 
-void my_homekit_setup();
-void my_homekit_loop();
-void update_status();
-void th_sensor_sample();
+// Sensor calibration offsets
+#define SENSOR_TEMP_OFFSET 0.0        // Temperature calibration offset
+#define SENSOR_HUM_OFFSET 0.0         // Humidity calibration offset
 
-// IR settings
-// https://github.com/crankyoldgit/IRremoteESP8266/blob/d8aee22117b826945724dfb4f1b94d82d68f31f0/src/IRremoteESP8266.h#L1011
-IRCoolixAC ac(14); // Set IR_TX be used to sending the IR_LED message
-// IRFujitsuAC ac(14);
-// IRac ac(14);
+// Pin definitions
+#define IR_TX_PIN 14                  // IR transmitter pin
+#define LED_PIN 2                     // LED indicator pin
 
-// Globals
-bool queueCommand = false;
-void flipQueueCommand(bool newState)
-{
-	// LOG_PRINT("Flipping queueCommand to %d\n", newState);
-	queueCommand = newState;
+// Function prototypes
+void setupHomeKit();                  // Initialize HomeKit
+void loopHomeKit();                   // HomeKit main loop
+void updateACStatus();                // Update AC status
+void readSensorData();                // Read sensor data
+void sendIRCommand();                 // Send IR command
+void handleWiFiConnection();          // Handle WiFi connection
+
+// Initialize Coolix AC IR control object
+IRCoolixAC ac(IR_TX_PIN);
+
+// Global variables
+bool shouldSendIRCommand = false;     // Flag to indicate if an IR command should be sent
+SHTSensor sht;                        // SHT temperature and humidity sensor object
+
+// HomeKit characteristic declarations
+extern "C" homekit_server_config_t config;                          // HomeKit server configuration
+extern "C" homekit_characteristic_t ac_name;                        // AC name
+extern "C" homekit_characteristic_t ac_active;                      // AC power state
+extern "C" homekit_characteristic_t current_temperature;            // Current temperature
+extern "C" homekit_characteristic_t current_relative_humidity;      // Current humidity
+extern "C" homekit_characteristic_t target_heater_cooler_state;     // Target heating/cooling state
+extern "C" homekit_characteristic_t cooling_threshold_temperature;  // Cooling target temperature
+extern "C" homekit_characteristic_t rotation_speed;                 // Fan speed
+extern "C" homekit_characteristic_t swing_mode;                     // Swing mode
+
+// Initialize LED
+void initLED() {
+    pinMode(LED_PIN, OUTPUT);         // Set LED pin as output
+    digitalWrite(LED_PIN, LOW);       // Turn off LED initially
 }
 
-SHTSensor sht;
+// Setup function
+void setup() {
+    Serial.begin(115200);             // Initialize serial communication at 115200 baud rate
+    while (!Serial) delay(50);        // Wait for serial connection
 
-void Led_int()
-{
-	pinMode(LED_PIN, OUTPUT);
-	digitalWrite(LED_PIN, LOW);
+    initLED();                        // Initialize LED
+    handleWiFiConnection();           // Connect to WiFi
+
+    Wire.begin(4, 5);                 // Initialize I2C communication (SDA=4, SCL=5)
+    if (!sht.init()) {                // Initialize SHT sensor
+        LOG_PRINT("Failed to initialize SHT sensor!");
+    }
+    sht.setAccuracy(SHTSensor::SHT_ACCURACY_MEDIUM); // Set sensor accuracy to medium
+
+    ac.begin();                       // Initialize IR control
+    setupHomeKit();                   // Initialize HomeKit
+
+    WiFi.setSleepMode(WIFI_LIGHT_SLEEP); // Set WiFi to light sleep mode for power saving
 }
 
+// Main loop
+void loop() {
+    loopHomeKit();                    // Handle HomeKit events
+    delay(10);                        // Short delay
 
-void setup()
-{
-	Serial.begin(115200, SERIAL_8N1, SERIAL_TX_ONLY);
-	// Serial.begin(115200);
-	while (!Serial) // Wait for the serial connection to be establised.
-		delay(50);
-	Led_int();
-
-	wifi_connect();
-	
-	Wire.begin(4, 5);
-	sht.init();	
-	sht.setAccuracy(SHTSensor::SHT_ACCURACY_MEDIUM); // only supported by SHT3x
-	
-	ac.begin();
-	
-	my_homekit_setup();
-	WiFi.setSleepMode(WIFI_LIGHT_SLEEP); // WIFI_NONE_SLEEP、WIFI_LIGHT_SLEEP、WIFI_MODEM_SLEEP
+    if (shouldSendIRCommand) {        // If an IR command needs to be sent
+        sendIRCommand();              // Send IR command
+        shouldSendIRCommand = false;  // Reset the flag
+    }
 }
 
-void loop()
-{
-	my_homekit_loop();
-	delay(10);
+// Read sensor data (temperature and humidity)
+void readSensorData() {
+    if (sht.readSample()) {           // If sensor data is successfully read
+        float temperature = sht.getTemperature() + SENSOR_TEMP_OFFSET; // Read temperature and apply offset
+        float humidity = sht.getHumidity() + SENSOR_HUM_OFFSET;        // Read humidity and apply offset
 
-	if (queueCommand)
-	{
-		Serial.printf("Homekit App send ir...\n");
-		ac.send();
-		flipQueueCommand(false);
-	}
+        // If temperature or humidity has changed, update HomeKit characteristics and notify clients
+        if (temperature != current_temperature.value.float_value || humidity != current_relative_humidity.value.float_value) {
+            current_temperature.value = HOMEKIT_FLOAT(temperature);
+            current_relative_humidity.value = HOMEKIT_FLOAT(humidity);
+            homekit_characteristic_notify(&current_temperature, current_temperature.value);
+            homekit_characteristic_notify(&current_relative_humidity, current_relative_humidity.value);
+        }
+    } else {
+        LOG_PRINT("Failed to read sensor data!"); // Log error if reading fails
+    }
 }
 
-
-extern "C" homekit_server_config_t config;
-
-extern "C" homekit_characteristic_t ac_name;
-extern "C" homekit_characteristic_t optional_name;
-extern "C" homekit_characteristic_t serial_number;
-extern "C" homekit_characteristic_t ac_active;
-extern "C" homekit_characteristic_t current_temperature;
-extern "C" homekit_characteristic_t current_relative_humidity;
-extern "C" homekit_characteristic_t current_heater_cooler_state;
-extern "C" homekit_characteristic_t target_heater_cooler_state;
-extern "C" homekit_characteristic_t cooling_threshold_temperature;
-extern "C" homekit_characteristic_t rotation_speed;
-extern "C" homekit_characteristic_t swing_mode;
-
-extern "C" void accessory_init();
-
-// get temperature and humidity from sensor
-void th_sensor_sample()
-{
-	if (sht.readSample())
-	{
-		float temperature_c = sht.getTemperature() + SENSOR_TEMP_OFFSET;
-		float humidity = sht.getHumidity() + SENSOR_HUM_OFFSET;
-
-		// temperature_f=temperature_c*1.8+32;
-		// temperature_f=celsiusToFahrenheit(temperature_c);
-
-		if (temperature_c != current_temperature.value.float_value || humidity != current_relative_humidity.value.float_value)
-		{
-			current_temperature.value = HOMEKIT_FLOAT(temperature_c);
-			current_relative_humidity.value = HOMEKIT_FLOAT(humidity);
-			homekit_characteristic_notify(&current_temperature, current_temperature.value);
-		}
-	}
-	else
-	{
-		Serial.print("Error in readSample()\n");
-	}
+// Send IR command
+void sendIRCommand() {
+    LOG_PRINT("Sending IR command..."); // Log the action
+    ac.send();                         // Send IR command
 }
 
-void ac_active_setter(const homekit_value_t value)
-{
-	bool on = value.bool_value;
-	ac_active.value.bool_value = on; // sync the value
-	on ? ac.on() : ac.off();
-	update_status();
+// Update AC status
+void updateACStatus() {
+    if (ac_active.value.bool_value) {  // If AC is turned on
+        ac.on();                       // Turn on AC
+        ac.setMode(ac.convertMode(stdAc::opmode_t::kCool)); // Set to cooling mode
+        ac.setTemp(cooling_threshold_temperature.value.float_value); // Set target temperature
+    } else {
+        ac.off();                      // Turn off AC
+    }
+    shouldSendIRCommand = true;        // Set flag to send IR command
 }
 
-void target_heater_cooler_state_setter(const homekit_value_t value)
-{
-	uint8 state = value.uint8_value;
-	target_heater_cooler_state.value = HOMEKIT_UINT8(state);
-	update_status();
+// Initialize HomeKit
+void setupHomeKit() {
+    // Set callback for AC power state
+    ac_active.setter = [](const homekit_value_t value) {
+        ac_active.value.bool_value = value.bool_value;
+        updateACStatus();              // Update AC status
+    };
+
+    // Set callback for target temperature
+    cooling_threshold_temperature.setter = [](const homekit_value_t value) {
+        cooling_threshold_temperature.value = HOMEKIT_FLOAT(value.float_value);
+        updateACStatus();              // Update AC status
+    };
+
+    // Set callback for fan speed
+    rotation_speed.setter = [](const homekit_value_t value) {
+        uint8_t speed = (uint8_t)(value.float_value / 20); // Convert HomeKit value to fan speed
+        rotation_speed.value = HOMEKIT_FLOAT(speed * 20);
+        ac.setFan(ac.convertFan(static_cast<stdAc::fanspeed_t>(speed))); // Set fan speed
+        shouldSendIRCommand = true;    // Set flag to send IR command
+    };
+
+    // Set callback for swing mode
+    swing_mode.setter = [](const homekit_value_t value) {
+        swing_mode.value = HOMEKIT_UINT8(value.uint8_value);
+        ac.setSwing(value.uint8_value); // Set swing mode
+        shouldSendIRCommand = true;    // Set flag to send IR command
+    };
+
+    // Generate unique device name and serial number from MAC address
+    uint8_t mac[6];
+    WiFi.macAddress(mac);
+    sprintf(ac_name.value.string_value, "HAC-%02X%02X%02X", mac[3], mac[4], mac[5]);
+    sprintf(serial_number.value.string_value, "%02X%02X%02X%02X%02X%02X", mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
+
+    accessory_init();                  // Initialize HomeKit accessory
+    arduino_homekit_setup(&config);    // Start HomeKit server
 }
 
-void cooling_threshold_temperature_setter(const homekit_value_t value)
-{
-	float ctemp = value.float_value;
-	cooling_threshold_temperature.value = HOMEKIT_FLOAT(ctemp);
-	ac.setTemp(ctemp);
-	flipQueueCommand(true);
+// HomeKit main loop
+void loopHomeKit() {
+    arduino_homekit_loop();            // Handle HomeKit events
+
+    static uint32_t lastSensorReadTime = 0;
+    if (millis() - lastSensorReadTime > 30000) { // Read sensor data every 30 seconds
+        lastSensorReadTime = millis();
+        readSensorData();
+    }
+
+    static uint32_t lastHeapInfoTime = 0;
+    if (millis() - lastHeapInfoTime > 15000) { // Log heap memory info every 15 seconds
+        lastHeapInfoTime = millis();
+        LOG_PRINT("Free heap: %d, HomeKit clients: %d", ESP.getFreeHeap(), arduino_homekit_connected_clients_count());
+    }
 }
 
-void rotation_speed_setter(const homekit_value_t value)
-{
-	uint8 sp = value.float_value;
-	uint8 newsp = (uint8)(sp / 20);
-	rotation_speed.value = HOMEKIT_FLOAT(((float)newsp) * 20);
-	// coolix Fan: 7 (Fixed),Fan: 4 (Min),Fan: 2 (Med),Fan: 1 (Max),Fan: 5 (Auto)
-	switch (newsp)
-	{
-	case 5:
-		ac.setFan(ac.convertFan(stdAc::fanspeed_t::kAuto));
-		break;
-	case 4:
-		ac.setFan(ac.convertFan(stdAc::fanspeed_t::kMax));
-		break;
-	case 3:
-		ac.setFan(ac.convertFan(stdAc::fanspeed_t::kMedium));
-		break;
-	case 2:
-		ac.setFan(4);
-		break;
-	case 1:
-		ac.setFan(7);
-		break;
-	case 0:
-		ac.setFan(7);
-		break;
-	}
-	flipQueueCommand(true);
-}
-
-void swing_mode_setter(const homekit_value_t value)
-{
-	uint8 state = value.uint8_value;
-	swing_mode.value = HOMEKIT_UINT8(state);
-
-	state ? ac.setSwing() : ac.setSwing();
-
-	if (ac_active.value.bool_value)
-	{
-		flipQueueCommand(true);
-	}
-}
-
-void update_status()
-{
-	homekit_value_t new_current_state;
-	if (ac_active.value.bool_value == false)
-	{
-		new_current_state = HOMEKIT_UINT8(0);
-	}
-	else
-	{
-		new_current_state = HOMEKIT_UINT8(3);
-		// kMideaACCool
-		ac.setMode(ac.convertMode(stdAc::opmode_t::kCool));
-		ac.setTemp(cooling_threshold_temperature.value.float_value);
-	}
-	if (!homekit_value_equal(&new_current_state, &current_heater_cooler_state.value))
-	{
-		current_heater_cooler_state.value = new_current_state;
-		homekit_characteristic_notify(&current_heater_cooler_state, current_heater_cooler_state.value);
-		flipQueueCommand(true);
-	}
-}
-
-static uint32_t next_heap_millis = 0;
-static uint32_t next_th_sensor_sample_millis = 0;
-
-void my_homekit_setup()
-{
-	ac_active.setter = ac_active_setter;
-	target_heater_cooler_state.setter = target_heater_cooler_state_setter;
-	cooling_threshold_temperature.setter = cooling_threshold_temperature_setter;
-	rotation_speed.setter = rotation_speed_setter;
-	swing_mode.setter = swing_mode_setter;
-	
-	uint8_t mac[6];
-	WiFi.macAddress(mac);
-	sprintf(ac_name.value.string_value, "HAC-%02X%02X%02X", mac[3], mac[4], mac[5]);
-	sprintf(serial_number.value.string_value,"%02X%02X%02X%02X%02X%02X", mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
-    
-	accessory_init();
-	arduino_homekit_setup(&config);
-}
-
-void my_homekit_loop()
-{
-	arduino_homekit_loop();
-	const uint32_t t = millis();
-	if (t > next_th_sensor_sample_millis)
-	{
-		// sensor sample every 30 seconds
-		next_th_sensor_sample_millis = t + 30 * 1000;
-		th_sensor_sample();
-	}
-	if (t > next_heap_millis)
-	{
-		// show heap info every 5 seconds
-		next_heap_millis = t + 15 * 1000;
-		INFO("Free heap: %d, HomeKit clients: %d", ESP.getFreeHeap(), arduino_homekit_connected_clients_count());
-	}
+// Handle WiFi connection
+void handleWiFiConnection() {
+    wifi_connect();                    // Connect to WiFi
+    if (WiFi.status() != WL_CONNECTED) {
+        LOG_PRINT("Failed to connect to WiFi!"); // Log error if connection fails
+    }
 }
