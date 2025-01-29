@@ -36,12 +36,12 @@ In your iOS device, open Home App and follow normal steps to [add a new accessor
 
 <br>
 
-### 空调功能
+   ### Air Conditioning Features
 
-1. Apple Homekit App 空调功能：开机，关机，制冷，制热，~~风速~~，当前环境温湿度显示。 
-<br>基于 [HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2](https://developers.apple.com/homekit/faq) ，有 *`此配件尚未经过认证可与Homekit配合使用， 因此部分功能可能不可用。`* 字样。
-2. 如果需要出门在外时远程控制 HomeKit 配件，请将 HomePod、HomePod mini、Apple TV 或 iPad  [设置为家居中枢。 ](https://support.apple.com/en-us/102557)
-3. 红外信号反馈：普通空调遥控器进行 开机，关机，制冷，制热，~~风速~~等 Apple Homekit 协议支持的动作时，Homekit App 会同步更新状态。
+1. Apple HomeKit App Air Conditioning Features: Power on, Power off, Cooling, Heating, ~~Fan speed~~， Current ambient temperature and humidity display. 
+<br>Based on [HomeKit Accessory Protocol Specification(Noncommercial Version) Release R2](https://developers.apple.com/homekit/faq)  ，there is a disclaimer stating that *`This accessory has not been certified for use with HomeKit, therefore some features may not be available.`* .
+2. If you need to remotely control HomeKit accessories while away from home, please [Set up your HomePod, HomePod mini, Apple TV, or iPad as a home hub](https://support.apple.com/en-us/102557)
+3. Infrared Signal Feedback: When a standard air conditioner remote performs actions supported by the Apple HomeKit protocol such as power on, power off, cooling, heating, and ~~fan speed~~, the HomeKit App will synchronously update the status.
 
 
 <div align="center">
