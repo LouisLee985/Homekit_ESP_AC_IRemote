@@ -20,6 +20,7 @@
 
 * If accurate temperature and humidity readings are required, do not solder U8,R8,R9,C5， After flashing the firmware, connect an external *`temperature and humidity sensor module`* , keeping it away from heat sources.
 <br>SDA,SCL,3V3,GNDare used for connecting an external *`temperature and humidity sensor module`*.
+<br>水合：饱和盐水，20-30度，湿度>=70%,密闭小空间>=12小时。
 
 * Supported external SHT *`temperature and humidity sensor modules`*: 　SHTC1，SHTC3，SHTW1，SHTW2，SHT3x-DIS (I2C)，SHT3x-ARP (ratiometric analog voltage output)，SHT85，SHT4x，e.g.
 <div align="center">
